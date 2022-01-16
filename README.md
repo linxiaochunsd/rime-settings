@@ -41,14 +41,13 @@
 * [参考/致谢](#%E5%8F%82%E8%80%83%E8%87%B4%E8%B0%A2)
 
   ## 更新记录
-  - 2022.01.16 fork from [original]https://github.com/wongdean/rime-settings 
+  - 2022.01.16 fork from [original](https://github.com/wongdean/rime-settings)
 
  
   ## 用法
   1. 安装Rime输入法,并注销或重启
   2. 下载仓库所有配置文件到本地
-  3. 安装字体文件(font 文件夹内的两个文件)
-  4. 右上角打开用户设定，会弹出用户设定文件夹
+  3. 右上角打开用户设定，会弹出用户设定文件夹
   
   ![](https://wang-1258168870.cos.ap-guangzhou.myqcloud.com/pic/2019-10-11-1lAuOL.png)
   
@@ -59,7 +58,7 @@
   
   ## 配置文件说明
   - `default.custom.yaml` 设置输入法、如何切换输入法、翻页等
-  - `double_pinyin_flypy.custom.yaml` 双拼方案，我用的是小鹤双拼
+  - `double_pinyin.custom.yaml` 微软双拼方案
   - `squirrel.custom.yaml` 设置哪些软件默认英文输入，输入法皮肤等
   - `custom_phrase.txt` 设置快捷输入，修改完成后要重新部署才能生效
   配置文件中大部分都有注释。
