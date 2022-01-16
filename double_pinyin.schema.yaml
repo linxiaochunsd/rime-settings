@@ -8,7 +8,7 @@ schema:
   author:
     - 佛振 <chen.sst@gmail.com>
   description: |
-    朙月拼音＋自然碼雙拼方案。
+    朙月拼音＋微软双拼方案。
   dependencies:
     - stroke
 
@@ -17,9 +17,9 @@ switches:
     reset: 0
     states: [ 中文, 西文 ]
   - name: full_shape
-    states: [ 半角, 全角 ]
+    states: [ 半, 全 ]
   - name: simplification
-    states: [ 漢字, 汉字 ]
+    states: [ 繁, 简 ]
   - name: ascii_punct
     states: [ 。，, ．， ]
 
@@ -129,7 +129,7 @@ reverse_lookup:
   enable_completion: true
   prefix: "`"
   suffix: "'"
-  tips: 〔筆畫〕
+  tips: 〔笔画〕
   preedit_format:
     - xlit/hspnz/一丨丿丶乙/
   comment_format:

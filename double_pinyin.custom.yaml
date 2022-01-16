@@ -7,15 +7,16 @@ patch:
       reset: 0
       states: [ 中文, Eng ]
     - name: emoji_suggestion
-      reset: 1
+      reset: 0
       states: [ "Off", "😄" ]
     - name: full_shape
-      states: [ 半角, 全角 ]
+      states: [ 半, 全 ]
     - name: simplification
       reset: 1
-      states: [繁體, 简体 ]
+      states: [繁, 简 ]
     - name: ascii_punct
       states: [ 。，, ．， ]
+
   engine/translators:
     - punct_translator
     - script_translator
@@ -24,7 +25,6 @@ patch:
     - simplifier@emoji_suggestion
     - simplifier
     - uniquifier
-    #- charset_filter@gbk
     #- single_char_filter
   engine/processors:
     - ascii_composer
@@ -87,9 +87,9 @@ patch:
   "engine/translators/@5": table_translator@custom_phrase
 # Rx: BlindingDark/rime-easy-en:customize:schema=double_pinyin_flypy
 # 若要启用 easy_en，取消注释下面两行
-  # __include: easy_en:/patch
-  # easy_en/enable_sentence: false # 中英文混输的设置
+#   __include: easy_en:/patch
+#   easy_en/enable_sentence: false # 中英文混输的设置
 # Rx: lotem/rime-octagram-data:customize:schema=luna_pinyin,model=hans
   __include: grammar:/hant
 # Rx: BlindingDark/rime-lua-select-character:customize:schema=luna_pinyin
-  # __include: lua_select_character:/patch # 需要lua_selector打开本行注释
+#   __include: lua_select_character:/patch # 需要lua_selector打开本行注释
