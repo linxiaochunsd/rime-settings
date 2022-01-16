@@ -1,18 +1,8 @@
 # Rime 鼠须管输入法傻瓜式配置指南
-  OS: macOS 11.2.3, Windows 10 LSTC 2019
   
-  version: 0.15.1
+  version: 1.0
   
-  Date:2021-04-05
-  
-  ----
-
-  > 遇到问题请查询 closed 的 [issue](https://github.com/wongdean/rime-settings/issues?q=is%3Aissue+is%3Aclosed)，90%都已经得到了解决~
-
-  > 项目会随着 Rime 的更新而更新，希望能给您带来帮助。欢迎star~
-  
-  > 如果有什么自定义方面的问题或者功能建议，也请提issue
-  
+  Date:2022-01-16
 
   # 介绍
   本仓库为 Rime 鼠须管输入法的配置文件，特点有：
@@ -20,7 +10,7 @@
   2. 支持 emoji 候选，支持符号快捷输入，支持中英文混合输入，支持`/`+关键词实现快捷输入
   3. 配置了部分网络上的词库，单词库来讲，已经非常强大，全新配置的话，最多一周就非常顺手
   4. 配置文件支持 Rime 鼠须管0.15.1(macOS)、Weasel 小狼毫0.14.3(Windows),Linux,功能上都没有问题。
-
+  5. 默认微软双拼方案, 英文标点, 程序员友好.
 
   ![rime](https://wang-1258168870.cos.ap-guangzhou.myqcloud.com/rime.jpg)
 
@@ -50,30 +40,10 @@
 * [To do](#to-do)
 * [参考/致谢](#%E5%8F%82%E8%80%83%E8%87%B4%E8%B0%A2)
 
-
   ## 更新记录
-  - 2020.03.31 主要问题修复，在 macOS Majave 上测试没有「大BUG」
-  - 2020.04.01 感谢 [@mingcheng](https://github.com/mingcheng) 提供的词库
-  - 2020.04.02 上传了 Windows 的配置文件，经试验，macOS 皮肤的有些特性不支持，于是只加（chao）了一个 win10 输入法皮肤，有个性化需求的用户请自己定制（定制指南见后）
-  - 2020.04.04 1、删掉了`luna_pinyin.dict.yaml`，其中有些词库有点问题（删掉好像没啥影响），如打“复制”一词，无效;2、优化了部分符号上屏情况，增加了逗号句号翻页的功能。依然感谢 [@mingcheng](https://github.com/mingcheng)
-  - 2020.04.06 添加了自然码方案（无辅助码），如需要辅助码，请参考：[Rim-zrm](https://github.com/SleepyBag/rime-zrm). ps:不用的方案请注释掉，在`default.custom.yaml`文件中，需要的方案则自己手动启用，测试不同双拼方案偶尔会串。如果串了就重新部署一下吧。
-  - ~~2020.04.20 重新做了词库，这个版本的词库是从搜狗词库里挑的，相比较之前的词库，去除了不少冗余的，打字准确率也高了不少，很不错～文件后缀为`.dict.yaml`的都重新下载，覆盖即可。~~
-  - 2020.04.21 昨天的词库有点问题，恢复[rime-dict](https://github.com/xiaoTaoist/rime-dict)中的部分词库，有部分改动。
-  - 2020.04.26 修复全拼不显示 emoji，增加[网盘下载入口](#7%E6%8F%90%E4%BE%9B%E7%BD%91%E7%9B%98%E4%B8%8B%E8%BD%BD)
-  - 2020.05.03 感谢[@ayalhw](https://github.com/ayalhw)建议，为方便中英文混合输入，引入了[easy-en](https://github.com/BlindingDark/rime-easy-en)方案，如果不需要此方案，将对应方案的`custom.yaml`中的这几行注释掉即可：
-    ```
-    __include: easy_en:/patch
-    easy_en/enable_sentence: false
-    ```
-  - 2020.05.04 整合官方的[『八股文』](https://github.com/lotem/rime-octagram-data)，替代 Rime 默认的词表和词频（应该是重新训练了语言模型，好处是输入更加准确一些）。可以试试「各个国家都有各个国家的国歌」、「充满希望的跋涉比到达目的地更能给人乐趣」（第二句可能有点困难，跟你的输入法有关）
-  - 2020.11.15 1、**更新词库**，引用部分[@alswl](https://github.com/alswl/Rime)提供的细胞词库，以及[@thtfhsw](https://github.com/thtfhsw/rime-essay-creator)8万带词频的词典库。词库目前的标准是小而精，但也不能太小。由于Rime的特点（本地、不联网），目前的输入法还远远达不到联网输入法的精确度，词语的组合只能按照词频来。词库大小的限制，对于长句、长词，无法做到一次命中，这也是Rime最大的缺点了，也是非常难提升的点。如果长期使用Rime，自己养词库的话，这个缺点长期来看影响很小，毕竟输入法有记忆的功能。适当的配置加上符合自己的词库，Rime是一个非常棒的输入法。2、引入lua选词拓展[rime-lua-select-character](https://github.com/BlindingDark/rime-lua-select-character)。引用原项目的介绍：
-  > 以词定字可以让你在输入一个词组后，选取这个词组的开头或结尾的一个字直接上屏，比如想要打“嫉”这个字，可以先打“嫉妒”再按 [ 键选择第一个字，这样在输入一些生僻字的时候会有所帮助。按 [ 键将会选中词组的第一个字，按 ] 键将会选中词组的最后一个字。------已注释，若需要请自行打开
-  - 2021.04.05 1、加入[zhwiki词库](https://github.com/felixonmars/fcitx5-pinyin-zhwiki)；2、更新[emoji](https://github.com/rime/rime-emoji)；3、加入反查（二分方案，全拼）---默认未打开；4、其他小修改，复原了[、]的翻页
+  - 2022.01.16 fork from [original]https://github.com/wongdean/rime-settings 
 
-  -----
-
-
-  
+ 
   ## 用法
   1. 安装Rime输入法,并注销或重启
   2. 下载仓库所有配置文件到本地
