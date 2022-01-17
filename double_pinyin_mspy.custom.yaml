@@ -1,0 +1,63 @@
+# Rime schema
+# encoding: utf-8
+patch:
+  switches:
+    # - name: ascii_mode
+    #   reset: 0
+    #   states: [ 中文, Eng ]
+    - name: emoji_suggestion
+      reset: 0
+      states: [ "Off", "😄" ]
+    # - name: full_shape
+    #   states: [ 半, 全 ]
+    - name: simplification
+      reset: 1
+      states: [繁, 简 ]
+    - name: ascii_punct
+      reset: 1
+      states: [ 。，, ．， ]
+
+  engine/filters:
+    - simplifier
+    - simplifier@emoji_suggestion
+    - uniquifier
+  emoji_suggestion:
+    opencc_config: emoji.json
+    option_name: emoji_suggestion
+  translator:
+    dictionary: luna_pinyin.extended
+
+  reverse_lookup:
+    dictionary: stroke
+    enable_completion: true
+    prefix: "`"
+    suffix: "'"
+    tips: 〔笔画〕
+    preedit_format:
+      - xlit/hspnz/一丨丿丶乙/
+    comment_format:
+      - xform/([nl])v/$1ü/
+  # # 自定义符号上屏
+  # punctuator:
+  #   import_preset: symbols
+  #   # 自定义快捷符号输入
+  #   # symbols:
+  #   #   "/fs": [½, ‰, ¼, ⅓, ⅔, ¾, ⅒ ]
+  #   half_shape:
+  #     "#": "#"
+  #     "*": "*"
+  #     "`": "`"
+  #     "~": "~"
+  #     "@": "@"
+  #     "=": "="
+  #     "/": ["/", "÷",]
+  #     '\': "、"
+  #     "_" : "──"
+  #     "'": {pair: ["「", "」"]}
+  #     "[": ["【", "["]
+  #     "]": ["】", "]"]
+  #     "$": ["¥", "$", "€", "£", "¢", "¤"]
+  #     "<": ["《", "〈", "«", "<"]
+  #     ">": ["》", "〉", "»", ">"]
+
+  # recognizer/patterns/punct: "^/([0-9]0?|[A-Za-z]+)$"

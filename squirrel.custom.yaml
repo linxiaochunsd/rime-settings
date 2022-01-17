@@ -68,9 +68,9 @@ patch:
       border_height: 6
       border_width: 12
       border_color_width: 0
-      font_face: PingFangSC-Regular
-      font_point: 24
-      label_font_point: 20
+      font_face: STHeitiSC-Light, STHeitiTC-Light
+      font_point: 32
+      label_font_point: 28
       text_color: 0xdedddd
       back_color: 0x3c3c3c
       label_color: 0x888785
