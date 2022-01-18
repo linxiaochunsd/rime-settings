@@ -3,7 +3,7 @@
 # Source: https://pinyin.sogou.com/dict/detail/index/482
 
 ---
-name: luna_pinyin.sijixingzhenquhuadimingciku
+name: luna_pinyin.place
 version: "2008.04.17"
 sort: by_weight
 use_preset_vocabulary: false

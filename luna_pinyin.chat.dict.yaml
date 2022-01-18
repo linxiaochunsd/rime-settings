@@ -1,4 +1,10 @@
-﻿安靜點
+﻿---
+name: luna_pinyin.chat
+version: "2017.03.30"
+sort: by_weight
+use_preset_vocabulary: false
+...
+安靜點
 安靜一點
 拜拜
 拜拜了
