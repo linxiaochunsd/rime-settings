@@ -1,6 +1,6 @@
 from fontTools.ttLib import TTFont
 
-font = TTFont(file='/System/Library/Fonts/STHeiti Light.ttc',fontNumber=0)
+font = TTFont(file='/System/Library/Fonts/STHeiti Light.ttc',fontNumber=1)
 # print(font['cmap'].__dict__)
 unicode_map = font['cmap'].tables[0].ttFont.getBestCmap()
 glyf_map = font['glyf']
@@ -10,8 +10,8 @@ dic_list = [
     # "luna_pinyin.chat.dict.yaml",
     # "luna_pinyin.chengyusuyu.dict.yaml",
     # "luna_pinyin.computer.dict.yaml",
-    # "luna_pinyin.dict.yaml",
-    "luna_pinyin_simp.dict.yaml",
+    "luna_pinyin.dict.yaml",
+    # "luna_pinyin_simp.dict.yaml",
     # "luna_pinyin.extended.dict.yaml",
     # "luna_pinyin.kaifa.dict.yaml",
     # "luna_pinyin.mingxing.dict.yaml",
@@ -24,6 +24,8 @@ dic_list = [
 ]
 ok = 0
 bad = 0
+import opencc
+converter = opencc.OpenCC('t2s.json')
 for dic in dic_list:
     o = open("output/"+dic,"a")
     comment_end=False
@@ -43,6 +45,16 @@ for dic in dic_list:
                     isbad = True
                     break
                 # print(f'字体库没有：【{word}】这个汉字')
+
+            if not isbad:
+                words = converter.convert(words)
+                for word in words:
+                    if not (ord(word) in unicode_map and len(glyf_map[unicode_map[ord(word)]].getCoordinates(0)[0]) > 0):
+                        # print(f'字体库中有：【{word}】这个汉字')
+                        bad += 1
+                        isbad = True
+                        break
+
             if not isbad:
                 o.writelines(line)
                 ok += 1
