@@ -6,16 +6,16 @@ patch:
     #   reset: 0
     #   states: [ 中文, Eng ]
     - name: emoji_suggestion
-      reset: 0
-      states: [ "Off", "😄" ]
+      reset: 1
+      states: [ "Hah", "😄" ]
     # - name: full_shape
     #   states: [ 半, 全 ]
     - name: simplification
       reset: 1
-      states: [繁, 简 ]
+      states: [繁, 简]
     - name: ascii_punct
       reset: 1
-      states: [ 。，, ．， ]
+      states: ["。，",". ," ]
 
   engine/filters:
     - simplifier
