@@ -46,28 +46,6 @@ patch:
       - xlit/hspnz/一丨丿丶乙/
     comment_format:
       - xform/([nl])v/$1ü/
-  # # 自定义符号上屏
-  # punctuator:
-  #   import_preset: symbols
-  #   # 自定义快捷符号输入
-  #   # symbols:
-  #   #   "/fs": [½, ‰, ¼, ⅓, ⅔, ¾, ⅒ ]
-  #   half_shape:
-  #     "#": "#"
-  #     "*": "*"
-  #     "`": "`"
-  #     "~": "~"
-  #     "@": "@"
-  #     "=": "="
-  #     "/": ["/", "÷",]
-  #     '\': "、"
-  #     "_" : "──"
-  #     "'": {pair: ["「", "」"]}
-  #     "[": ["【", "["]
-  #     "]": ["】", "]"]
-  #     "$": ["¥", "$", "€", "£", "¢", "¤"]
-  #     "<": ["《", "〈", "«", "<"]
-  #     ">": ["》", "〉", "»", ">"]
   __include: easy_en:/patch_double_pinyin_mspy
   easy_en/enable_sentence: false
 
