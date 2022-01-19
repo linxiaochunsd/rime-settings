@@ -68,7 +68,7 @@ patch:
       border_height: 6
       border_width: 12
       border_color_width: 0
-      font_face: STHeitiSC-Light, STHeitiTC-Light
+      font_face: STHeitiTC-Light, STHeitiSC-Light
       font_point: 32
       label_font_point: 28
       text_color: 0xdedddd

@@ -1,6 +1,6 @@
 from fontTools.ttLib import TTFont
 
-font = TTFont(file='/System/Library/Fonts/STHeiti Light.ttc',fontNumber=1)
+font = TTFont(file='/System/Library/Fonts/STHeiti Light.ttc',fontNumber=0)
 # print(font['cmap'].__dict__)
 unicode_map = font['cmap'].tables[0].ttFont.getBestCmap()
 glyf_map = font['glyf']
