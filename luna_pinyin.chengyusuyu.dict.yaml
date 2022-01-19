@@ -102,8 +102,6 @@ use_preset_vocabulary: false
 碍难从命	ai nan cong ming
 碍难遵命	ai nan zun ming
 爱闹的孩子吃奶多	ai nao de hai zi chi nai duo
-騃女痴儿	ai nv chi er
-騃女痴男	ai nv chi nan
 哀戚之情	ai qi zhi qing
 爱钱如命	ai qian ru ming
 矮墙浅屋	ai qiang qian wu
@@ -3718,7 +3716,6 @@ use_preset_vocabulary: false
 不遗巨细	bu yi ju xi
 不亦乐乎	bu yi le hu
 布衣粝食	bu yi li shi
-布衣芒屩	bu yi mang jue
 不一其人	bu yi qi ren
 布衣黔首	bu yi qian shou
 不以人废言	bu yi ren fei yan
@@ -4836,7 +4833,6 @@ use_preset_vocabulary: false
 彻里至外	che li zhi wai
 车马辐辏	che ma fu cou
 车马骈阗	che ma pian tian
-车马軿驰	che ma ping chi
 车马如龙	che ma ru long
 车马填门	che ma tian men
 车马盈门	che ma ying men
@@ -5349,7 +5345,6 @@ use_preset_vocabulary: false
 迟钝毒药	chi dun du yao
 迟钝诱饵	chi dun you er
 侈恩席宠	chi en xi chong
-痴儿騃女	chi er ai nv
 痴儿呆女	chi er dai nv
 痴儿娇女	chi er jiao nv
 痴儿说梦	chi er shuo meng
@@ -5410,7 +5405,6 @@ use_preset_vocabulary: false
 吃惊受怕	chi jing shou pa
 池酒林胾	chi jiu lin zi
 持久之计	chi jiu zhi ji
-絺句绘章	chi ju hui zhang
 耻居人下	chi ju ren xia
 耻居王后	chi ju wang hou
 赤口白舌	chi kou bai she
@@ -5459,7 +5453,6 @@ use_preset_vocabulary: false
 驰名中外	chi ming zhong wai
 鸱目虎吻	chi mu hu wen
 迟暮之年	chi mu zhi nian
-痴男騃女	chi nan ai nv
 痴男怨女	chi nan yuan nv
 赤贫如洗	chi pin ru xi
 持平之论	chi ping zhi lun
@@ -5593,7 +5586,6 @@ use_preset_vocabulary: false
 驰誉中外	chi yu zhong wai
 吃冤枉饭	chi yuan wang fan
 摛藻雕章	chi zao diao zhang
-絺藻雕章	chi zao diao zhang
 尺泽之鲵	chi ze zhi ni
 叱咤风云	chi zha feng yun
 叱咤腕甲	chi zha wan jia
@@ -5684,8 +5676,6 @@ use_preset_vocabulary: false
 重楼叠阁	chong lou die ge
 重楼飞阁	chong lou fei ge
 重楼复阁	chong lou fu ge
-重峦叠巘	chong luan die yan
-重峦迭巘	chong luan die yan
 重峦叠嶂	chong luan die zhang
 重峦复嶂	chong luan fu zhang
 崇论吰议	chong lun hong yi
@@ -5758,7 +5748,6 @@ use_preset_vocabulary: false
 愁肠寸断	chou chang cun duan
 愁肠九回	chou chang jiu hui
 愁肠九转	chou chang jiu zhuan
-愁肠殢酒	chou chang ti jiu
 愁城难解	chou cheng nan jie
 愁城兀坐	chou cheng wu zuo
 抽抽搭搭	chou chou da da
@@ -6392,7 +6381,6 @@ use_preset_vocabulary: false
 吹气若兰	chui qi ruo lan
 吹气胜兰	chui qi sheng lan
 垂磬之室	chui qing zhi shi
-炊琼爇桂	chui qiong ruo gui
 槌仁提义	chui ren ti yi
 炊沙成饭	chui sha cheng fan
 炊沙镂冰	chui sha lou bing
@@ -7053,7 +7041,6 @@ use_preset_vocabulary: false
 打柴的不能跟放羊的走	da chai de bu neng gen fang yang de zou
 大彻大悟	da che da wu
 大车驷马	da che si ma
-大车无輗	da che wu ni
 大车以载	da che yi zai
 大秤分金	da cheng fen jin
 大骋厥辞	da cheng jue ci
@@ -7709,7 +7696,6 @@ use_preset_vocabulary: false
 单刀赴会	dan dao fu hui
 单刀趣入	dan dao qu ru
 单刀直入	dan dao zhi ru
-担簦蹑屩	dan deng nie jue
 箪豆见色	dan dou jian se
 丹垩一新	dan e yi xin
 瘅恶彰善	dan e zhang shan
@@ -8964,8 +8950,6 @@ use_preset_vocabulary: false
 丁宁戒告	ding ning jie gao
 丁宁周至	ding ning zhou zhi
 定倾扶危	ding qing fu wei
-鼎折覆餗	ding she fu su
-鼎折餗覆	ding she su fu
 定身攻击	ding shen gong ji
 鼎盛春秋	ding sheng chun qiu
 丁是丁卯是卯	ding shi ding mao shi mao
@@ -12385,7 +12369,6 @@ use_preset_vocabulary: false
 附膻逐臭	fu shan zhu chou
 附膻逐秽	fu shan zhu hui
 附膻逐腥	fu shan zhu xing
-鵩上承尘	fu shang cheng chen
 富商大贾	fu shang da gu
 富商巨贾	fu shang ju gu
 附上罔下	fu shang wang xia
@@ -12448,14 +12431,9 @@ use_preset_vocabulary: false
 赴死如归	fu si ru gui
 腹笥甚广	fu si shen guang
 腹笥甚俭	fu si shen jian
-覆餗偾辕	fu su fen yuan
 肤粟股栗	fu su gu li
-覆餗折足	fu su zhe zu
 复苏之风	fu su zhi feng
-覆餗之患	fu su zhi huan
 复苏之雾	fu su zhi wu
-覆餗之衅	fu su zhi xin
-覆餗之忧	fu su zhi you
 妇随夫唱	fu sui fu chang
 抚绥万方	fu sui wan fang
 俯遂幽眇	fu sui you miao
@@ -12613,7 +12591,6 @@ use_preset_vocabulary: false
 浮云翳日	fu yun yi ri
 浮云朝露	fu yun zhao lu
 复杂事务	fu za shi wu
-鵩在承尘	fu zai cheng chen
 富在深山有远亲	fu zai shen shan you yuan qin
 腹载五车	fu zai wu che
 覆载之下	fu zai zhi xia
@@ -12645,7 +12622,6 @@ use_preset_vocabulary: false
 付之一哂	fu zhi yi shen
 付之一叹	fu zhi yi tan
 付之一笑	fu zhi yi xiao
-鈇质之诛	fu zhi zhi zhu
 腹中兵甲	fu zhong bing jia
 负重含污	fu zhong han wu
 腹中鳞甲	fu zhong lin jia
@@ -12902,7 +12878,6 @@ use_preset_vocabulary: false
 干霄拂云	gan xiao fu yun
 干霄凌云	gan xiao ling yun
 感心动耳	gan xin dong er
-甘心鈇钺	gan xin fu yue
 甘心乐意	gan xin le yi
 甘心瞑目	gan xin ming mu
 甘心情愿	gan xin qing yuan
@@ -14018,7 +13993,6 @@ use_preset_vocabulary: false
 骨肉分离	gu rou fen li
 骨肉乖离	gu rou guai li
 骨肉离散	gu rou li san
-骨肉团圞	gu rou tuan luan
 骨肉团圆	gu rou tuan yuan
 骨肉未寒	gu rou wei han
 骨肉相残	gu rou xiang can
@@ -14172,7 +14146,6 @@ use_preset_vocabulary: false
 瓜连蔓引	gua lian man yin
 寡廉鲜耻	gua lian xian chi
 挂免战牌	gua mian zhan pai
-刮膜金鎞	gua mo jin pi
 刮目视之	gua mu shi zhi
 刮目相待	gua mu xiang dai
 刮目相观	gua mu xiang guan
@@ -18907,7 +18880,6 @@ use_preset_vocabulary: false
 校短推长	jiao duan tui chang
 较短絜长	jiao duan xie chang
 皦短心长	jiao duan xin chang
-骄儿騃女	jiao er ai nv
 教儿婴孩	jiao er ying hai
 嚼饭喂人	jiao fan wei ren
 嚼饭与人	jiao fan yu ren
@@ -19540,7 +19512,6 @@ use_preset_vocabulary: false
 金奴银婢	jin nu yin bi
 金瓯无缺	jin ou wu que
 尽盘将军	jin pan jiang jun
-金鎞刮膜	jin pi gua mo
 筋疲力弊	jin pi li bi
 筋疲力竭	jin pi li jie
 筋疲力尽	jin pi li jin
@@ -19803,7 +19774,6 @@ use_preset_vocabulary: false
 金针度人	jin zhen du ren
 锦阵花营	jin zhen hua ying
 金针见血	jin zhen jian xue
-金鳷擘海	jin zhi bo hai
 矜智负能	jin zhi fu neng
 金枝花萼	jin zhi hua e
 今置将不善	jin zhi jiang bu shan
@@ -20798,9 +20768,6 @@ use_preset_vocabulary: false
 绝渡逢舟	jue du feng zhou
 决断如流	jue duan ru liu
 谲而不正	jue er bu zheng
-撧耳顿足	jue er dun zu
-撧耳挠腮	jue er nao sai
-撧耳揉腮	jue er rou sai
 绝非易事	jue fei yi shi
 决腹断头	jue fu duan tou
 绝甘分少	jue gan fen shao
@@ -22558,9 +22525,6 @@ use_preset_vocabulary: false
 砾石营地	li shi ying di
 礼失则昏	li shi ze hun
 力士捉蝇	li shi zhuo ying
-离疏释蹻	li shu shi jue
-离蔬释屩	li shu shi jue
-离蔬释蹻	li shu shi jue
 黎庶涂炭	li shu tu tan
 礼顺人情	li shun ren qing
 历岁久远	li sui jiu yuan
@@ -24586,7 +24550,6 @@ use_preset_vocabulary: false
 盲光先知	mang guang xian zhi
 芒寒色正	mang han se zheng
 忙家不会会家不忙	mang jia bu hui hui jia bu mang
-芒屩布衣	mang jue bu yi
 忙里偷闲	mang li tou xian
 氓獠户歌	mang liao hu ge
 莽卤灭裂	mang lu mie lie
@@ -26554,7 +26517,6 @@ use_preset_vocabulary: false
 闹闹穰穰	nao nao rang rang
 闹闹热热	nao nao re re
 挠曲枉直	nao qu wang zhi
-挠腮撧耳	nao sai jue er
 恼羞变怒	nao xiu bian nu
 恼羞成怒	nao xiu cheng nu
 挠直为曲	nao zhi wei qu
@@ -26909,10 +26871,6 @@ use_preset_vocabulary: false
 啮甲冥鼠	nie jia ming shu
 蹑脚蹑手	nie jiao nie shou
 蹑景追飞	nie jing zhui fei
-蹑屩担簦	nie jue dan deng
-蹑蹻担簦	nie jue dan deng
-蹑屩檐簦	nie jue yan deng
-蹑蹻檐簦	nie jue yan deng
 捏了一把汗	nie le yi ba han
 捏两把汗	nie liang ba han
 捏两手汗	nie liang shou han
@@ -27453,7 +27411,6 @@ use_preset_vocabulary: false
 盆倾瓮倒	pen qing weng dao
 盆倾瓮瀽	pen qing weng jian
 喷唾成珠	pen tuo cheng zhu
-濆旋倾侧	pen xuan qing ce
 喷血自污	pen xue zi wu
 喷雨嘘云	pen yu xu yun
 喷云吐雾	pen yun tu wu
@@ -27473,7 +27430,6 @@ use_preset_vocabulary: false
 朋党执虎	peng dang zhi hu
 朋党之争	peng dang zhi zheng
 蓬岛归真	peng dao gui zhen
-鹏鴳齐致	peng e qi zhi
 蓬发垢衣	peng fa gou yi
 朋分花用	peng fen hua yong
 捧腹大喜	peng fu da xi
@@ -29498,7 +29454,6 @@ use_preset_vocabulary: false
 窃斧生疑	qie fu sheng yi
 妾妇之道	qie fu zhi dao
 切肤之痛	qie fu zhi tong
-窃鈇之疑	qie fu zhi yi
 切割灵魂	qie ge ling hun
 窃钩窃国	qie gou qie guo
 窃钩者诛	qie gou zhe zhu
@@ -31593,7 +31548,6 @@ use_preset_vocabulary: false
 柔情侠骨	rou qing xia gu
 柔茹刚吐	rou ru gang tu
 柔茹寡断	rou ru gua duan
-揉腮撧耳	rou sai jue er
 肉山脯林	rou shan fu lin
 肉山酒海	rou shan jiu hai
 柔胜刚克	rou sheng gang ke
@@ -32795,7 +32749,6 @@ use_preset_vocabulary: false
 山遥水远	shan yao shui yuan
 山肴野蔬	shan yao ye shu
 山肴野蔌	shan yao ye su
-山殽野湋	shan yao ye wei
 芟夷大难	shan yi da nan
 善以为宝	shan yi wei bao
 山阴道上应接不暇	shan yin dao shang ying jie bu xia
@@ -35198,9 +35151,7 @@ use_preset_vocabulary: false
 死无对证	si wu dui zheng
 肆无忌惮	si wu ji dan
 死无葬身之地	si wu zang shen zhi di
-伺瑕导蠙	si xia dao pin
 伺瑕导隙	si xia dao xi
-伺瑕抵蠙	si xia di pin
 伺瑕抵隙	si xia di xi
 思贤如渴	si xian ru ke
 私相授受	si xiang shou shou
@@ -35238,7 +35189,6 @@ use_preset_vocabulary: false
 四肢百体	si zhi bai ti
 四肢不勤五谷不分	si zhi bu qin wu gu bu fen
 死知府不如活老鼠	si zhi fu bu ru huo lao shu
-驷之过蠙	si zhi guo pin
 驷之过隙	si zhi guo xi
 思之千里	si zhi qian li
 死中求活	si zhong qiu huo
@@ -35828,7 +35778,6 @@ use_preset_vocabulary: false
 啼饥号寒	ti ji hao han
 擿奸发伏	ti jian fa fu
 蹄间三寻	ti jian san xun
-鶗鴂雕卉	ti jue diao hui
 涕泪交垂	ti lei jiao chui
 涕泪交集	ti lei jiao ji
 涕泪交加	ti lei jiao jia
@@ -35872,8 +35821,6 @@ use_preset_vocabulary: false
 提心在口	ti xin zai kou
 体恤入微	ti xu ru wei
 梯愚入圣	ti yu ru sheng
-殢雨尤云	ti yu you yun
-殢云尤雨	ti yun you yu
 体质圣契	ti zhi sheng qi
 天宝当年	tian bao dang nian
 天保九如	tian bao jiu ru
@@ -39409,7 +39356,6 @@ use_preset_vocabulary: false
 心小志大	xin xiao zhi da
 心心常似过桥时	xin xin chang si guo qiao shi
 心心念念	xin xin nian nian
-伈伈睍睍	xin xin xian xian
 欣欣向荣	xin xin xiang rong
 心心相通	xin xin xiang tong
 心心相印	xin xin xiang yin
@@ -40959,7 +40905,6 @@ use_preset_vocabulary: false
 一笔勾销	yi bi gou xiao
 一鼻孔出气	yi bi kong chu qi
 一笔抹倒	yi bi mo dao
-一笔抹摋	yi bi mo sa
 一笔抹杀	yi bi mo sha
 一笔抹煞	yi bi mo sha
 一碧万顷	yi bi wan qing
@@ -43226,14 +43171,12 @@ use_preset_vocabulary: false
 有行无市	you hang wu shi
 有何面目	you he mian mu
 有恒者得之	you heng zhe de zhi
-尤红殢翠	you hong ti cui
 又哄又劝	you hong you quan
 又红又专	you hong you zhuan
 有后娘就有后爹	you hou niang jiu you hou die
 有话便长无话便短	you hua bian chang wu hua bian duan
 有花方酌酒	you hua fang zhuo jiu
 有话好说	you hua hao shuo
-尤花殢雪	you hua ti xue
 忧患余生	you huan yu sheng
 游回磨转	you hui mo zhuan
 有魂没识	you hun mei shi
@@ -43301,7 +43244,6 @@ use_preset_vocabulary: false
 有年无月	you nian wu yue
 有牛别嫌慢有饭别嫌烂	you niu bie xian man you fan bie xian lan
 有女怀春	you nv huai chun
-有蠙可乘	you pin ke cheng
 有凭有据	you ping you ju
 有其父必有其子	you qi fu bi you qi zi
 有气没力	you qi mei li
@@ -43507,8 +43449,6 @@ use_preset_vocabulary: false
 优越护符	you yue hu fu
 有约在先	you yue zai xian
 游云惊龙	you yun jing long
-尤云殢雪	you yun ti xue
-尤云殢雨	you yun ti yu
 优哉游哉	you zai you zai
 有枣没枣打三竿	you zao mei zao da san gan
 有则败之	you ze bai zhi
@@ -43746,11 +43686,9 @@ use_preset_vocabulary: false
 逾千越万	yu qian yue wan
 踰墙避命	yu qiang bi ming
 遇强不弱	yu qiang bu ruo
-逾墙窥蠙	yu qiang kui pin
 逾墙窥隙	yu qiang kui xi
 踰墙相从	yu qiang xiang cong
 逾墙越舍	yu qiang yue she
-逾墙钻蠙	yu qiang zuan pin
 逾墙钻隙	yu qiang zuan xi
 逾墙钻穴	yu qiang zuan xue
 玉桥海滩	yu qiao hai tan
@@ -44330,7 +44268,6 @@ use_preset_vocabulary: false
 云涌风飞	yun yong feng fei
 运用之妙存乎一心	yun yong zhi miao cun hu yi xin
 运用之妙在于一心	yun yong zhi miao zai yu yi xin
-云尤雨殢	yun you yu ti
 云雨巫山	yun yu wu shan
 韵语阳秋	yun yu yang qiu
 晕晕沉沉	yun yun chen chen
@@ -44536,7 +44473,6 @@ use_preset_vocabulary: false
 择其善者而从之	ze qi shan zhe er cong zhi
 择善而从	ze shan er cong
 择善而行	ze shan er xing
-齰舌缄唇	ze she jian chun
 昃食宵衣	ze shi xiao yi
 责实循名	ze shi xun ming
 责无旁贷	ze wu pang dai
@@ -44675,7 +44611,6 @@ use_preset_vocabulary: false
 沾沾自衒	zhan zhan zi xuan
 站着茅坑不拉屎	zhan zhe mao keng bu la shi
 站着说话不腰疼	zhan zhe shuo hua bu yao teng
-饘粥餬口	zhan zhou hu kou
 辗转反侧	zhan zhuan fan ce
 长傲饰非	zhang ao shi fei
 张本继末	zhang ben ji mo
@@ -44855,7 +44790,6 @@ use_preset_vocabulary: false
 折长补短	zhe chang bu duan
 遮地盖天	zhe di gai tian
 遮地漫天	zhe di man tian
-折鼎覆餗	zhe ding fu su
 折断胫骨	zhe duan jing gu
 折槁振落	zhe gao zhen luo
 遮垢藏污	zhe gou cang wu
@@ -44899,7 +44833,6 @@ use_preset_vocabulary: false
 折狱断案	zhe yu duan an
 詟谀立懦	zhe yu li nuo
 褶皱花冠	zhe zhou hua guan
-折足覆餗	zhe zu fu su
 振笔疾书	zhen bi ji shu
 振臂一呼	zhen bi yi hu
 振笔直书	zhen bi zhi shu

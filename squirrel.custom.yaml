@@ -60,7 +60,7 @@ patch:
     mojave_dark:
       name: "沙漠夜／Mojave Dark"
       author: "xiehuc <xiehuc@gmail.com>"
-      horizontal: true
+      horizontal: false
       inline_preedit: true
       candidate_format: "%c %@"
       corner_radius: 5
@@ -72,6 +72,7 @@ patch:
       font_point: 32
       label_font_point: 28
       text_color: 0xdedddd
+        #back_color: 0x3c3c3c
       back_color: 0x3c3c3c
       label_color: 0x888785
       border_color: 0x3c3c3c
