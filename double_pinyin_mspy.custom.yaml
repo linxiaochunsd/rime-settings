@@ -21,6 +21,15 @@ patch:
     - simplifier
     - simplifier@emoji_suggestion
     - uniquifier
+  "engine/translators/@after last": table_translator@custom_phrase
+  custom_phrase:
+    dictionary: ""
+    user_dict: custom_phrase
+    db_class: stabledb
+    enable_completion: false
+    enable_sentence: false
+    initial_quality: 1
+
   emoji_suggestion:
     opencc_config: emoji.json
     option_name: emoji_suggestion
@@ -61,4 +70,16 @@ patch:
   #     ">": ["》", "〉", "»", ">"]
   __include: easy_en:/patch_double_pinyin_mspy
   easy_en/enable_sentence: false
+
+  switches/@next:
+    name: symbol_support
+    reset: 1
+    states: [ "无符", "符" ]
+  'engine/filters/@before 0':
+    simplifier@symbol_support
+  symbol_support:
+    opencc_config: symbol.json
+    option_name: symbol_support
+    tips: all
+
   # recognizer/patterns/punct: "^/([0-9]0?|[A-Za-z]+)$"
