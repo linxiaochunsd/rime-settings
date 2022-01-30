@@ -55,7 +55,7 @@ for dic in dic_list:
             if not isbad:
                 words = s2t.convert(words)
                 for word in words:
-                    if not (ord(word) in unicode_map and                                len(glyf_map[unicode_map[ord(word)]].getCoordinates(0)[0]) > 0):
+                    if not (ord(word) in unicode_map and len(glyf_map[unicode_map[ord(word)]].getCoordinates(0)[0]) > 0):
                         print("ok",ok,"bad",bad,"line:",line, words)
                         bad += 1
                         isbad = True

@@ -17,11 +17,85 @@ patch:
       reset: 1
       states: ["。，",". ," ]
 
+  schema/dependencies:
+    - luna_pinyin_assistant
   engine/filters:
     - simplifier
     - simplifier@emoji_suggestion
     - uniquifier
-  "engine/translators/@after last": table_translator@custom_phrase
+  engine/translators:
+    - punct_translator
+    - reverse_lookup_translator
+    - script_translator
+    - table_translator@custom_phrase
+    - lua_translator@date_time_translator
+
+  speller/algebra:
+    - erase/^xx$/
+    - derive/^(\w+):\w+/$1/
+    - derive/^([aoe].*):/o$1/
+    - xform/iu:/Q/
+    - xform/[iu]a:/W/
+    - xform/er:|[uv]an:/R/
+    - xform/[uv]e:/T/
+    - xform/v:|uai:/Y/
+    - xform/^sh/U/
+    - xform/^ch/I/
+    - xform/^zh/V/
+    - xform/uo:/O/
+    - xform/[uv]n:/P/
+    - xform/i?ong:/S/
+    - xform/[iu]ang:/D/
+    - xform/(.)en:/$1F/
+    - xform/(.)eng:/$1G/
+    - xform/(.)ang:/$1H/
+    - xform/ian:/M/
+    - xform/(.)an:/$1J/
+    - xform/iao:/C/
+    - xform/(.)ao:/$1K/
+    - xform/(.)ai:/$1L/
+    - xform/(.)ei:/$1Z/
+    - xform/ie:/X/
+    - xform/ui:/V/
+    - derive/T:/V/
+    - xform/(.)ou:/$1B/
+    - xform/in:/N/
+    - xform/ing:/;/
+    - xform/(.)([aoeuiv]):/$1$2/
+#
+    - derive/^([aoe].*)$/o$1/
+    - xform/^([ae])(.*)$/$1$1$2/
+    - xform/iu$/Q/
+    - xform/[iu]a$/W/
+    - xform/er$|[uv]an$/R/
+    - xform/[uv]e$/T/
+    - xform/uai$/Y/
+    - derive/v$/Y/
+    - xform/^sh/U/
+    - xform/^ch/I/
+    - xform/^zh/V/
+    - xform/uo$/O/
+    - xform/[uv]n$/P/
+    - xform/i?ong$/S/
+    - xform/[iu]ang$/D/
+    - xform/(.)en$/$1F/
+    - xform/(.)eng$/$1G/
+    - xform/(.)ang$/$1H/
+    - xform/ian$/M/
+    - xform/(.)an$/$1J/
+    - xform/iao$/C/
+    - xform/(.)ao$/$1K/
+    - xform/(.)ai$/$1L/
+    - xform/(.)ei$/$1Z/
+    - xform/ie$/X/
+    - xform/ui$/V/
+    - derive/T$/V/
+    - xform/(.)ou$/$1B/
+    - xform/in$/N/
+    - xform/ing$/;/
+#    -
+    - xlit/QWRTYUIOPSDFGHMJCKLZXVBN/qwrtyuiopsdfghmjcklzxvbn/
+
   custom_phrase:
     dictionary: ""
     user_dict: custom_phrase
@@ -37,15 +111,14 @@ patch:
     dictionary: luna_pinyin.extended
 
   reverse_lookup:
-    dictionary: stroke
+    dictionary: luna_pinyin_assistant
     enable_completion: true
     prefix: "`"
     suffix: "'"
-    tips: 〔笔画〕
-    preedit_format:
-      - xlit/hspnz/一丨丿丶乙/
+    tips: 〔全拼反查〕
     comment_format:
-      - xform/([nl])v/$1ü/
+      - xform/\w+:(\w{2})/[$1]
+      - xform/\w+:(\w{1})/
   __include: easy_en:/patch_double_pinyin_mspy
   easy_en/enable_sentence: false
 

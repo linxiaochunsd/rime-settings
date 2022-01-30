@@ -44,6 +44,7 @@ use_preset_vocabulary: false
 
 import_tables:
   - luna_pinyin
+  - luna_pinyin_assistant
   - luna_pinyin.xiandaihanyu
   - luna_pinyin.chengyusuyu
   - luna_pinyin.popular
@@ -54,5 +55,5 @@ import_tables:
   - luna_pinyin.place
   - luna_pinyin.website
   - luna_pinyin.mingxing
-  - zhwiki
+#  - zhwiki
 ...
