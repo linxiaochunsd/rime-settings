@@ -2,9 +2,11 @@
 .*~
 /luna_pinyin.userdb/*
 /easy_en.userdb/*
+/assistant_table.userdb/*
 /build/*
 /user.yaml
 /installation.yaml
 opencc/.DS_Store
 .DS_Store
 output
+.idea/*
