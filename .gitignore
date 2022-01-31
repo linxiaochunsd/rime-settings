@@ -2,7 +2,7 @@
 .*~
 /luna_pinyin.userdb/*
 /easy_en.userdb/*
-/assistant_table.userdb/*
+/luna_pinyin_assistant.userdb/*
 /build/*
 /user.yaml
 /installation.yaml
