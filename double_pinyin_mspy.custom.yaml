@@ -33,7 +33,7 @@ patch:
   speller/algebra:
     - erase/^xx$/
     - derive/^(\w+):\w+/$1/
-    - derive/^([aoe].*):/o$1/
+    - derive/^([aoe].*):/o$1:/
     - xform/iu:/Q/
     - xform/[iu]a:/W/
     - xform/er:|[uv]an:/R/
