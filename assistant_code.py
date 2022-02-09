@@ -131,102 +131,127 @@ def ms_zrm_assistant():
             assistant_map[words] = assistant_code
             # print("assistant_map",assistant_map)
             # dst.writelines(line)
+    freq_mapping = dict()
+    with open("essay-zh-hans.txt", "r") as src:
+        # copy_header(src, dst)
+        line = True
+        while line:
+            line = src.readline()
+            splits = line.split()
+            # print("splits",splits)
+            if len(splits) < 2:
+                continue
+            words = splits[0]
+            # print("len(words)",words,len(words))
+            if len(words) != 1:
+                continue
+            freq = splits[1]
+            if words in freq_mapping:
+                freq = max(freq_mapping[words],freq)
+                freq_mapping[words] = freq
+            else:
+                freq_mapping[words] = freq
+            # print("assistant_map",assistant_map)
+            # dst.writelines(line)
 
-    dic_list = [
-        # "zrm2000.dict.yaml",
-        # "luna_pinyin.chat.dict.yaml",
-        # "luna_pinyin.chengyusuyu.dict.yaml",
-        # "luna_pinyin.computer.dict.yaml",
-        "luna_pinyin.dict.yaml",
-        # "luna_pinyin.extended.dict.yaml",
-        # "luna_pinyin.kaifa.dict.yaml",
-        # "luna_pinyin.mingxing.dict.yaml",
-        # "luna_pinyin.place.dict.yaml",
-        # "luna_pinyin.poetry.dict.yaml",
-        # "luna_pinyin.popular.dict.yaml",
-        # "luna_pinyin.website.dict.yaml",
-        # "luna_pinyin.xiandaihanyu.dict.yaml",
-        # "zhwiki.dict.yaml",
-    ]
 
     t2s = opencc.OpenCC('t2s')
     s2t = opencc.OpenCC('s2t')
     # phrase_dst = open("output/luna_pinyin_phrase.dict.yaml", "a")
-    for dic in dic_list:
-        multi_char_count = 0
-        dst = open("output/luna_pinyin_assistant.dict.yaml", "w")
-        with open(dic, "r") as src:
-            copy_header(src, dst)
-            line = True
-            while line:
-                line = src.readline()
-                splits = line.split()
-                if len(splits) == 0:
-                    dst.writelines(line)
+
+    dic = "luna_pinyin.dict.yaml"
+    multi_char_count = 0
+    dst = open("output/double_assistant.dict.yaml", "w")
+    result = dict()
+    with open(dic, "r") as src:
+        copy_header(src, dst)
+        line = True
+        while line:
+            line = src.readline()
+            splits = line.split()
+            if len(splits) == 0:
+                dst.writelines(line)
+                continue
+
+            words = splits[0]
+
+            if len(words) != 1:
+                multi_char_count +=1
+                # phrase_dst.writelines(line)
+                # print("multi_char_count",multi_char_count)
+                continue
+            freq_percent = 100
+            if words in assistant_map and words in freq_mapping:
+                assistant_code = assistant_map[words]
+                freq = freq_mapping[words]
+                char_codes = []
+                quanpin = splits[1]
+                if len(splits) > 2:
+                    freq_percent = float(splits[2].strip("%"))
+                    print("freq_percent",freq_percent)
+                if quanpin not in quanpin_ms_shuangpin_mapping:
+                    print("quanpin not in map",quanpin,line)
                     continue
+                shuangpin = quanpin_ms_shuangpin_mapping[quanpin]
+                for sp in shuangpin:
+                    for ac in assistant_code:
+                        char_codes.append(sp + sep + ac)
+                    for char_code in char_codes:
+                        newline = splits[0] + "\t" + char_code + "\t" +str(int(int (freq) * freq_percent/ 100))+"\n"
+                        result[newline] = 1
+                        # dst.writelines(newline)
+                # print("char_codes",char_codes)
+                continue
 
-                words = splits[0]
 
-                if len(words) != 1:
-                    multi_char_count +=1
-                    # phrase_dst.writelines(line)
-                    # print("multi_char_count",multi_char_count)
+            words = s2t.convert(words)
+            if words in assistant_map and words in freq_mapping:
+                assistant_code = assistant_map[words]
+                freq = freq_mapping[words]
+                char_codes = []
+                quanpin = splits[1]
+                if len(splits) > 2:
+                    freq_percent = float(splits[2].strip("%"))
+                    print("freq_percent",freq_percent)
+                if quanpin not in quanpin_ms_shuangpin_mapping:
+                    print("quanpin not in map",quanpin,line)
                     continue
+                shuangpin = quanpin_ms_shuangpin_mapping[quanpin]
+                for sp in shuangpin:
+                    for ac in assistant_code:
+                        char_codes.append(sp + sep + ac)
+                    for char_code in char_codes:
+                        newline = splits[0] + "\t" + char_code + "\t" +str(int(int (freq) * freq_percent/ 100))+"\n"
+                        result[newline] = 1
+                        # dst.writelines(newline)
+                # print("char_codes",char_codes)
+                continue
 
-                if words in assistant_map:
-                    assistant_code = assistant_map[words]
-                    char_codes = []
-                    quanpin = splits[1]
-                    if quanpin not in quanpin_ms_shuangpin_mapping:
-                        print("quanpin not in map",quanpin,line)
-                        continue
-                    shuangpin = quanpin_ms_shuangpin_mapping[quanpin]
-                    for sp in shuangpin:
-                        for ac in assistant_code:
-                            char_codes.append(sp + sep + ac)
-                        for char_code in char_codes:
-                            newline = line.replace(splits[1], char_code)
-                            dst.writelines(newline)
-                    print("char_codes",char_codes)
+
+            words = t2s.convert(words)
+            if words in assistant_map and words in freq_mapping:
+                assistant_code = assistant_map[words]
+                freq = freq_mapping[words]
+                char_codes = []
+                quanpin = splits[1]
+                if len(splits) > 2:
+                    freq_percent = float(splits[2].strip("%"))
+                    print("freq_percent",freq_percent)
+                if quanpin not in quanpin_ms_shuangpin_mapping:
+                    print("quanpin not in map",quanpin,line)
                     continue
-
-
-                words = s2t.convert(words)
-                if words in assistant_map:
-                    assistant_code = assistant_map[words]
-                    char_codes = []
-                    quanpin = splits[1]
-                    if quanpin not in quanpin_ms_shuangpin_mapping:
-                        print("quanpin not in map",quanpin,line)
-                        continue
-                    shuangpin = quanpin_ms_shuangpin_mapping[quanpin]
-                    for sp in shuangpin:
-                        for ac in assistant_code:
-                            char_codes.append(sp + sep + ac)
-                        for char_code in char_codes:
-                            newline = line.replace(splits[1], char_code)
-                            dst.writelines(newline)
-                    print("char_codes",char_codes)
-                    continue
-
-
-                words = t2s.convert(words)
-                if words in assistant_map:
-                    assistant_code = assistant_map[words]
-                    char_codes = []
-                    quanpin = splits[1]
-                    if quanpin not in quanpin_ms_shuangpin_mapping:
-                        print("quanpin not in map",quanpin,line)
-                        continue
-                    shuangpin = quanpin_ms_shuangpin_mapping[quanpin]
-                    for sp in shuangpin:
-                        for ac in assistant_code:
-                            char_codes.append(sp + sep + ac)
-                        for char_code in char_codes:
-                            newline = line.replace(splits[1], char_code)
-                            dst.writelines(newline)
-                    print("char_codes",char_codes)
-                    continue
+                shuangpin = quanpin_ms_shuangpin_mapping[quanpin]
+                for sp in shuangpin:
+                    for ac in assistant_code:
+                        char_codes.append(sp + sep + ac)
+                    for char_code in char_codes:
+                        newline = splits[0] + "\t" + char_code + "\t" +str(int(int (freq) * freq_percent/ 100))+"\n"
+                        result[newline] = 1
+                        # dst.writelines(newline)
+                # print("char_codes",char_codes)
+                continue
+        for line in result:
+            dst.writelines(line)
 
                 # dst.writelines(line)
 def shuangpin_replace(input):

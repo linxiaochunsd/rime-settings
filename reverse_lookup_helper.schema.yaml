@@ -40,7 +40,7 @@ engine:
   translators:
     - echo_translator
     - punct_translator
-    - table_translator
+    - script_translator
     - table_translator@custom_phrase
     - lua_translator@date_time_translator
   filters:

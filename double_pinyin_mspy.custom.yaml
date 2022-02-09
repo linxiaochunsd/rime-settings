@@ -105,9 +105,9 @@ patch:
     - xlit/QWRTYUIOPSDFGHMJCKLZXVBN/qwrtyuiopsdfghmjcklzxvbn/
 
   double_assistant_reverse_lookup: #該反查濾鏡名
-    tags: [ double_assistant_reverse_lookup_helper ] #掛在這個tag所對應的翻譯器上
+    tags: [ double_assistant_reverse_lookup_helper ] #挂在helper这个translator上
     overwrite_comment: true
-    dictionary: double_assistant #反查所得爲蒼頡碼
+    dictionary: double_assistant #反查辅助码
     comment_format:
       - xform/([a-z;]{2}):([a-z]{2})/〔$2〕/
   custom_phrase:
@@ -137,7 +137,7 @@ patch:
     enable_completion: true
     prefix: "`"
     suffix: ""
-    tips: 〔双拼辅助码〕
+    tips: 〔反查辅助码〕
     comment_format:
       - xform/.*([a-z]{2})$/[$1]/
 
