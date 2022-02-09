@@ -1,7 +1,0 @@
-# Rime table
-#@/db_name	luna_pinyin
-#@/db_type	tabledb
-#@/rime_version	1.7.3
-#@/tick	9
-聂	nie:eu	2
-聂穎	nie:eu ying:hy	1

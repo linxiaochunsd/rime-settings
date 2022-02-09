@@ -50,12 +50,12 @@ engine:
     - uniquifier
 
 speller:
-  alphabet: ';abcdefghijklmnopqrstuvwxyz'
+  alphabet: ';abcdefghijklmnopqrstuvwxyz`'
   initials: 'abcdefghijklmnopqrstuvwxyz'
   delimiter: " '"
   algebra:
     - erase/^xx$/
-#    - derive/^(\w+):\w+/$1/
+    - derive/^(\w+):\w+/$1/
     - xform/^([aoe].*):/o$1:/
     - xform/iu:/Q/
     - xform/[iu]a:/W/
@@ -105,8 +105,7 @@ symbol_support:
 translator:
   dictionary: luna_pinyin_assistant
   spelling_hints: 1
-#  prism: luna_pinyin.extended
-  user_dict: luna_pinyin
+  user_dict: my_dict
   db_class: tabledb
   comment_format:
 #    - xform/[a-z;]+://

@@ -3,7 +3,7 @@ patch:
     - schema: double_pinyin_mspy
     - schema: easy_en
     - schema: luna_pinyin_assistant
-    - schema: double_assistant_helper
+    - schema: reverse_lookup_helper
   switcher/caption:  "〔方案选单〕"
   switcher/hotkeys:
     - "Control+grave" # 注意是control+`，不是command+`

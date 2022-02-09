@@ -1,0 +1,88 @@
+schema:
+  schema_id: reverse_lookup_helper
+  name: "副住码反查"
+  version: "2009新春版"
+  author:
+    - "发明人: 周志农 先生"
+  description: |
+    描　述: 自然码输入系统2000, 2009新春版
+    码　表: 《自然码2009新春版》V7.27
+    网　址: http://www.zrm.com.cn/
+switches:
+  - name: emoji_suggestion
+    reset: 0
+    states: [ "Hah", "😄" ]
+  - name: full_shape
+    states: [ 半, 全 ]
+  - name: simplification
+    reset: 1
+    states: [ 繁, 简 ]
+  - name: ascii_punct
+    reset: 1
+    states: [ "。，",". ," ]
+
+engine:
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - echo_translator
+    - punct_translator
+    - table_translator
+    - table_translator@custom_phrase
+    - lua_translator@date_time_translator
+  filters:
+    - simplifier
+    - simplifier@emoji_suggestion
+    - uniquifier
+
+speller:
+  alphabet: ';abcdefghijklmnopqrstuvwxyz`'
+  initials: 'abcdefghijklmnopqrstuvwxyz'
+  delimiter: " '"
+
+custom_phrase:
+  dictionary: ""
+  user_dict: custom_phrase
+  db_class: stabledb
+  enable_completion: false
+  enable_sentence: false
+  initial_quality: 1
+emoji_suggestion:
+  opencc_config: emoji.json
+  option_name: emoji_suggestion
+symbol_support:
+  opencc_config: symbol.json
+  option_name: symbol_support
+  tips: all
+
+translator:
+  dictionary: reverse_lookup_helper
+  spelling_hints: 1
+  enable_completion: true
+  comment_format:
+    - xform/.*([a-z]{2})$/[$1]/
+
+
+punctuator:
+  import_preset: symbols.custom
+
+key_binder:
+  import_preset: default
+
+recognizer:
+  import_preset: default
+  patterns:
+    punct: "^/([a-z]+|[0-9])$"

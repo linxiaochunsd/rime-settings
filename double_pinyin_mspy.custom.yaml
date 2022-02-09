@@ -19,55 +19,29 @@ patch:
 
   schema/dependencies:
     - luna_pinyin_assistant
+    - reverse_lookup_helper
   engine/filters:
-#    - reverse_lookup_filter@double_assistant
     - simplifier
     - simplifier@emoji_suggestion
     - uniquifier
+  engine/segmentors:
+    - ascii_segmentor
+    - matcher
+    - affix_segmentor@double_assistant_reverse_lookup_helper
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
   engine/translators:
     - punct_translator
-#    - script_translator@double_assistant
-#    - reverse_lookup_translator
     - script_translator
+    - table_translator@double_assistant_reverse_lookup_helper
     - table_translator@custom_phrase
     - lua_translator@date_time_translator
 
-#  speller/alphabet: zyxwvutsrqponmlkjihgfedcba;
-#  speller/initials: zyxwvutsrqponmlkjihgfedcba
+
   speller/algebra:
     - erase/^xx$/
-#    - derive/^(\w+):\w+/$1/
-#    - derive/^([aoe].*):/o$1:/
-#    - xform/iu:/Q/
-#    - xform/[iu]a:/W/
-#    - xform/er:|[uv]an:/R/
-#    - xform/[uv]e:/T/
-#    - xform/v:|uai:/Y/
-#    - xform/^sh/U/
-#    - xform/^ch/I/
-#    - xform/^zh/V/
-#    - xform/uo:/O/
-#    - xform/[uv]n:/P/
-#    - xform/i?ong:/S/
-#    - xform/[iu]ang:/D/
-#    - xform/(.)en:/$1F/
-#    - xform/(.)eng:/$1G/
-#    - xform/(.)ang:/$1H/
-#    - xform/ian:/M/
-#    - xform/(.)an:/$1J/
-#    - xform/iao:/C/
-#    - xform/(.)ao:/$1K/
-#    - xform/(.)ai:/$1L/
-#    - xform/(.)ei:/$1Z/
-#    - xform/ie:/X/
-#    - xform/ui:/V/
-#    - derive/T:/V/
-#    - xform/(.)ou:/$1B/
-#    - xform/in:/N/
-#    - xform/ing:/;/
-#    - xform/(.)([aoeuiv]):/$1$2/
-#
-    - xform/^([a-z;]+):\w+/$1/
+    - derive/^([a-z;]+):\w+/$1/
     - xform/^([aoe].*)$/o$1/
     - xform/^([ae])(.*)$/$1$1$2/
     - xform/iu$/Q/
@@ -97,7 +71,37 @@ patch:
     - xform/(.)ou$/$1B/
     - xform/in$/N/
     - xform/ing$/;/
-#    -
+
+    - xform/^([aoe].*):/o$1:/
+    - xform/iu:/Q/
+    - xform/[iu]a:/W/
+    - xform/er:|[uv]an:/R/
+    - xform/[uv]e:/T/
+    - xform/v:|uai:/Y/
+    - xform/^sh/U/
+    - xform/^ch/I/
+    - xform/^zh/V/
+    - xform/uo:/O/
+    - xform/[uv]n:/P/
+    - xform/i?ong:/S/
+    - xform/[iu]ang:/D/
+    - xform/(.)en:/$1F/
+    - xform/(.)eng:/$1G/
+    - xform/(.)ang:/$1H/
+    - xform/ian:/M/
+    - xform/(.)an:/$1J/
+    - xform/iao:/C/
+    - xform/(.)ao:/$1K/
+    - xform/(.)ai:/$1L/
+    - xform/(.)ei:/$1Z/
+    - xform/ie:/X/
+    - xform/ui:/V/
+    - derive/T:/V/
+    - xform/(.)ou:/$1B/
+    - xform/in:/N/
+    - xform/ing:/;/
+    - xform/(.)([aoeuiv]):/$1$2/
+
     - xlit/QWRTYUIOPSDFGHMJCKLZXVBN/qwrtyuiopsdfghmjcklzxvbn/
 
   custom_phrase:
@@ -113,24 +117,21 @@ patch:
     option_name: emoji_suggestion
   translator:
     dictionary: luna_pinyin.extended
-    user_dict: luna_pinyin
-    db_class: tabledb
+    user_dict: my_dict
     spelling_hints: 2
-#    comment_format:
-#      - xform/\w+:(\w{2})/[$1]
+    db_class: tabledb
 
-  double_assistant:
-    tag: double_assistant
-#    tags: [double_assistant]
-    dictionary: luna_pinyin_assistant
+
+  double_assistant_reverse_lookup_helper:
+    tag: double_assistant_reverse_lookup_helper
+    dictionary: reverse_lookup_helper
+    spelling_hints: 10
     enable_completion: true
     prefix: "`"
-    suffix: "'"
-    tips: 〔全拼反查〕
+    suffix: ""
+    tips: 〔双拼辅助码〕
     comment_format:
-      - xform/\w+:(\w{2})/[$1]
-      - xform/\w+:(\w{1})/
-#    prism: luna_pinyin_assistant
+      - xform/.*([a-z]{2})$/[$1]/
 
   __include: easy_en:/patch_double_pinyin_mspy
   easy_en/enable_sentence: false
@@ -147,5 +148,4 @@ patch:
     tips: all
   'punctuator/import_preset': symbols.custom
   'recognizer/patterns/punct': "^/([a-z]+|[0-9])$"
-#  'recognizer/patterns/double_assistant': "^[a-z;]+:.*$"
-#  'recognizer/patterns/double_assistant': "`[a-z;]*'?$"
+  'recognizer/patterns/double_assistant_reverse_lookup_helper': "`[a-z;]*$"
