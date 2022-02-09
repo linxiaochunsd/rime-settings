@@ -1,6 +1,6 @@
 schema:
   schema_id: luna_pinyin_assistant
-  name: "微软双拼+自然辅助码"
+  name: "微软双拼++"
   version: "2009新春版"
   author:
     - "发明人: 周志农 先生"
@@ -9,11 +9,17 @@ schema:
     码　表: 《自然码2009新春版》V7.27
     网　址: http://www.zrm.com.cn/
 switches:
-  - name: ascii_mode
+  - name: emoji_suggestion
     reset: 0
-    states: [ 中文, 西文 ]
+    states: [ "Hah", "😄" ]
   - name: full_shape
-    states: [ 半角, 全角 ]
+    states: [ 半, 全 ]
+  - name: simplification
+    reset: 1
+    states: [ 繁, 简 ]
+  - name: ascii_punct
+    reset: 1
+    states: [ "。，",". ," ]
 
 engine:
   processors:
@@ -34,34 +40,87 @@ engine:
   translators:
     - echo_translator
     - punct_translator
-    - table_translator
     - reverse_lookup_translator
+    - script_translator
+    - table_translator@custom_phrase
+    - lua_translator@date_time_translator
+  filters:
+    - simplifier
+    - simplifier@emoji_suggestion
+    - uniquifier
 
 speller:
   alphabet: ';abcdefghijklmnopqrstuvwxyz'
   initials: 'abcdefghijklmnopqrstuvwxyz'
   delimiter: " '"
-  max_code_length: 9
+  algebra:
+    - erase/^xx$/
+#    - derive/^(\w+):\w+/$1/
+    - xform/^([aoe].*):/o$1:/
+    - xform/iu:/Q/
+    - xform/[iu]a:/W/
+    - xform/er:|[uv]an:/R/
+    - xform/[uv]e:/T/
+    - xform/v:|uai:/Y/
+    - xform/^sh/U/
+    - xform/^ch/I/
+    - xform/^zh/V/
+    - xform/uo:/O/
+    - xform/[uv]n:/P/
+    - xform/i?ong:/S/
+    - xform/[iu]ang:/D/
+    - xform/(.)en:/$1F/
+    - xform/(.)eng:/$1G/
+    - xform/(.)ang:/$1H/
+    - xform/ian:/M/
+    - xform/(.)an:/$1J/
+    - xform/iao:/C/
+    - xform/(.)ao:/$1K/
+    - xform/(.)ai:/$1L/
+    - xform/(.)ei:/$1Z/
+    - xform/ie:/X/
+    - xform/ui:/V/
+    - derive/T:/V/
+    - xform/(.)ou:/$1B/
+    - xform/in:/N/
+    - xform/ing:/;/
+    - xform/(.)([aoeuiv]):/$1$2/
+    - xlit/QWRTYUIOPSDFGHMJCKLZXVBN/qwrtyuiopsdfghmjcklzxvbn/
+
+custom_phrase:
+  dictionary: ""
+  user_dict: custom_phrase
+  db_class: stabledb
+  enable_completion: false
+  enable_sentence: false
+  initial_quality: 1
+emoji_suggestion:
+  opencc_config: emoji.json
+  option_name: emoji_suggestion
+symbol_support:
+  opencc_config: symbol.json
+  option_name: symbol_support
+  tips: all
 
 translator:
   dictionary: luna_pinyin_assistant
+  spelling_hints: 1
+#  prism: luna_pinyin.extended
+  user_dict: luna_pinyin
+  db_class: tabledb
+  comment_format:
+#    - xform/[a-z;]+://
+  #    - xform/\w+:(\w{1})/
+#  preedit_format:
+#    - xform/(\w)x/$1iaaaae/
 
 punctuator:
-  import_preset: default
+  import_preset: symbols.custom
 
 key_binder:
   import_preset: default
-  bindings:
-    # has_menu 对应有候选词的条件
-    # paging   对应已经有翻页动作的条件
-    - { when: has_menu, accept: semicolon, send: 2 }            # 第2候选键(;)
-    - { when: has_menu, accept: apostrophe, send: 3 }           # 第3候选键(')
-    #- { when: has_menu, accept: minus, send: Page_Up }          # 前翻页键(-):定义has_menu而非paging.候选首页未后移/后翻,确保前翻页键无动作
-    #- { when: has_menu, accept: equal, send: Page_Down }        # 后翻页键(=)
-    - { when: has_menu, accept: bracketleft, send: Page_Up }    # 前翻页键([):定义has_menu而非paging.候选首页未后移/后翻,确保前翻页键无动作
-    - { when: has_menu, accept: bracketright, send: Page_Down } # 后翻页键(])
-    - { when: has_menu, accept: comma, send: comma }            # 屏蔽default.yaml定义的前翻键(,)
-    - { when: has_menu, accept: period, send: period }          # 屏蔽default.yaml定义的后翻键(.)
 
 recognizer:
   import_preset: default
+  patterns:
+    punct: "^/([a-z]+|[0-9])$"
