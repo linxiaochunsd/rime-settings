@@ -4,7 +4,7 @@ from fontTools.ttLib import TTFont
 import opencc
 
 assistant_map = dict()
-sep = ""
+sep = ":"
 
 def bad_font_filter():
     font = TTFont(file='/System/Library/Fonts/STHeiti Light.ttc', fontNumber=0)
@@ -30,8 +30,8 @@ def bad_font_filter():
     ok = 0
     bad = 0
 
-    t2s = opencc.OpenCC('t2s.json')
-    s2t = opencc.OpenCC('s2t.json')
+    t2s = opencc.OpenCC('t2s')
+    s2t = opencc.OpenCC('s2t')
     for dic in dic_list:
         o = open("output/" + dic , "w")
         with open(dic, "r") as f:
@@ -149,8 +149,8 @@ def ms_zrm_assistant():
         # "zhwiki.dict.yaml",
     ]
 
-    t2s = opencc.OpenCC('t2s.json')
-    s2t = opencc.OpenCC('s2t.json')
+    t2s = opencc.OpenCC('t2s')
+    s2t = opencc.OpenCC('s2t')
     # phrase_dst = open("output/luna_pinyin_phrase.dict.yaml", "a")
     for dic in dic_list:
         multi_char_count = 0

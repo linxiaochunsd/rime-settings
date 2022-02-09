@@ -1,6 +1,6 @@
 schema:
   schema_id: reverse_lookup_helper
-  name: "副住码反查"
+  name: "微软双拼+辅助码"
   version: "2009新春版"
   author:
     - "发明人: 周志农 先生"
@@ -52,6 +52,8 @@ speller:
   alphabet: ';abcdefghijklmnopqrstuvwxyz`'
   initials: 'abcdefghijklmnopqrstuvwxyz'
   delimiter: " '"
+  algebra:
+    - derive/^([a-z;]+):([a-z]+)/$1$2/
 
 custom_phrase:
   dictionary: ""
@@ -69,9 +71,10 @@ symbol_support:
   tips: all
 
 translator:
-  dictionary: reverse_lookup_helper
+  dictionary: double_assistant
   spelling_hints: 1
   enable_completion: true
+  enable_user_dict: false
   comment_format:
     - xform/.*([a-z]{2})$/[$1]/
 

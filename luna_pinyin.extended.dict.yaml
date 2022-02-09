@@ -44,7 +44,6 @@ vocabulary: essay-zh-hans
 
 import_tables:
   - luna_pinyin
-  - luna_pinyin_assistant
   - luna_pinyin.xiandaihanyu
   - luna_pinyin.chengyusuyu
   - luna_pinyin.popular
@@ -56,4 +55,6 @@ import_tables:
   - luna_pinyin.website
   - luna_pinyin.mingxing
   - zhwiki
+  - luna_pinyin_assistant
+#  - double_assistant
 ...

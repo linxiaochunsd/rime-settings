@@ -16,11 +16,11 @@ patch:
     - name: ascii_punct
       reset: 1
       states: ["。，",". ," ]
-
+  schema/name: "微软双拼++"
   schema/dependencies:
-    - luna_pinyin_assistant
     - reverse_lookup_helper
   engine/filters:
+    - reverse_lookup_filter@double_assistant_reverse_lookup
     - simplifier
     - simplifier@emoji_suggestion
     - uniquifier
@@ -104,6 +104,12 @@ patch:
 
     - xlit/QWRTYUIOPSDFGHMJCKLZXVBN/qwrtyuiopsdfghmjcklzxvbn/
 
+  double_assistant_reverse_lookup: #該反查濾鏡名
+    tags: [ double_assistant_reverse_lookup_helper ] #掛在這個tag所對應的翻譯器上
+    overwrite_comment: true
+    dictionary: double_assistant #反查所得爲蒼頡碼
+    comment_format:
+      - xform/([a-z;]{2}):([a-z]{2})/〔$2〕/
   custom_phrase:
     dictionary: ""
     user_dict: custom_phrase
@@ -118,13 +124,15 @@ patch:
   translator:
     dictionary: luna_pinyin.extended
     user_dict: my_dict
-    spelling_hints: 2
-    db_class: tabledb
+#    spelling_hints: 3
+#    comment_format:
+#      - xform/.*([a-z]{2})$/[$1]/
+#    db_class: tabledb
 
 
   double_assistant_reverse_lookup_helper:
     tag: double_assistant_reverse_lookup_helper
-    dictionary: reverse_lookup_helper
+    dictionary: double_assistant
     spelling_hints: 10
     enable_completion: true
     prefix: "`"

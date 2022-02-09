@@ -2,7 +2,7 @@ patch:
   schema_list:
     - schema: double_pinyin_mspy
     - schema: easy_en
-    - schema: luna_pinyin_assistant
+#    - schema: luna_pinyin_assistant
     - schema: reverse_lookup_helper
   switcher/caption:  "〔方案选单〕"
   switcher/hotkeys:
