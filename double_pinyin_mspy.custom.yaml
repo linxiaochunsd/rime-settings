@@ -34,7 +34,7 @@ patch:
   engine/translators:
     - punct_translator
     - script_translator
-    - table_translator@double_assistant_reverse_lookup_helper
+    - script_translator@double_assistant_reverse_lookup_helper
     - table_translator@custom_phrase
     - lua_translator@date_time_translator
 

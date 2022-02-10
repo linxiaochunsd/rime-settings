@@ -188,6 +188,7 @@ def ms_zrm_assistant():
                 quanpin = splits[1]
                 if len(splits) > 2:
                     freq_percent = float(splits[2].strip("%"))
+                    freq = str(int(int (freq) * freq_percent/ 100))
                     print("freq_percent",freq_percent)
                 if quanpin not in quanpin_ms_shuangpin_mapping:
                     print("quanpin not in map",quanpin,line)
@@ -197,8 +198,8 @@ def ms_zrm_assistant():
                     for ac in assistant_code:
                         char_codes.append(sp + sep + ac)
                     for char_code in char_codes:
-                        newline = splits[0] + "\t" + char_code + "\t" +str(int(int (freq) * freq_percent/ 100))+"\n"
-                        result[newline] = 1
+                        newline = splits[0] + "\t" + char_code + "\t" +freq+"\n"
+                        result[newline] = int(freq)
                         # dst.writelines(newline)
                 # print("char_codes",char_codes)
                 continue
@@ -212,6 +213,7 @@ def ms_zrm_assistant():
                 quanpin = splits[1]
                 if len(splits) > 2:
                     freq_percent = float(splits[2].strip("%"))
+                    freq = str(int(int (freq) * freq_percent/ 100))
                     print("freq_percent",freq_percent)
                 if quanpin not in quanpin_ms_shuangpin_mapping:
                     print("quanpin not in map",quanpin,line)
@@ -221,8 +223,8 @@ def ms_zrm_assistant():
                     for ac in assistant_code:
                         char_codes.append(sp + sep + ac)
                     for char_code in char_codes:
-                        newline = splits[0] + "\t" + char_code + "\t" +str(int(int (freq) * freq_percent/ 100))+"\n"
-                        result[newline] = 1
+                        newline = splits[0] + "\t" + char_code + "\t" +freq+"\n"
+                        result[newline] = int(freq)
                         # dst.writelines(newline)
                 # print("char_codes",char_codes)
                 continue
@@ -236,6 +238,7 @@ def ms_zrm_assistant():
                 quanpin = splits[1]
                 if len(splits) > 2:
                     freq_percent = float(splits[2].strip("%"))
+                    freq = str(int(int (freq) * freq_percent/ 100))
                     print("freq_percent",freq_percent)
                 if quanpin not in quanpin_ms_shuangpin_mapping:
                     print("quanpin not in map",quanpin,line)
@@ -245,13 +248,15 @@ def ms_zrm_assistant():
                     for ac in assistant_code:
                         char_codes.append(sp + sep + ac)
                     for char_code in char_codes:
-                        newline = splits[0] + "\t" + char_code + "\t" +str(int(int (freq) * freq_percent/ 100))+"\n"
-                        result[newline] = 1
+                        newline = splits[0] + "\t" + char_code + "\t" +freq+"\n"
+                        result[newline] = int(freq)
                         # dst.writelines(newline)
                 # print("char_codes",char_codes)
                 continue
-        for line in result:
-            dst.writelines(line)
+        # print(result)
+        list = sorted(result.items(), key = lambda kv:(kv[1], kv[0]),reverse=True)
+        for item in list:
+            dst.writelines(item[0])
 
                 # dst.writelines(line)
 def shuangpin_replace(input):

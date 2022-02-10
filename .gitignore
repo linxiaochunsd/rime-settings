@@ -3,6 +3,7 @@
 /luna_pinyin.userdb/*
 /easy_en.userdb/*
 /my_dict.userdb/*
+/*.userdb/*
 /luna_pinyin_assistant.userdb/*
 /build/*
 /user.yaml
