@@ -44,6 +44,7 @@ engine:
   translators:
     - table_translator
     - punct_translator
+    - echo_translator
   filters:
     - uniquifier
     - lua_filter@easy_en_enhance_filter
@@ -55,6 +56,7 @@ speller:
 translator:
   dictionary: easy_en
   spelling_hints: 9
+  enable_user_dict: false
   comment_format:
     - xform/^.+$//
 

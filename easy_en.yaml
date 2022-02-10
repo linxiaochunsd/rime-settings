@@ -23,3 +23,7 @@ patch:
   recognizer/patterns/uppercase: ''
   speller/alphabet:
     __include: easy_en.schema:/speller/alphabet
+  speller/algebra:
+    - xlit/QWRTYUIOPSDFGHMJCKLZXVBN/qwrtyuiopsdfghmjcklzxvbn/
+
+#  translator/enable_user_dict: false

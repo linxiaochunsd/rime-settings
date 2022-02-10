@@ -6,8 +6,16 @@ patch:
   translator:
     dictionary: easy_en
     spelling_hints: 9
-      #enable_completion: true
+    user_dict: my_en
+    db_class: tabledb
+    enable_completion: true
+    enable_encoder: true
+    enable_user_dict: false
+    comment_format:
+
   engine/filters:
     - uniquifier
   translator/enable_sentence: false
   easy_en/split_sentence: false
+  speller/algebra:
+#    - xlit/QWRTYUIOPSDFGHMJCKLZXVBN/qwrtyuiopsdfghmjcklzxvbn/

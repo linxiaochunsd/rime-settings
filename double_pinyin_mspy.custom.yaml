@@ -38,7 +38,8 @@ patch:
     - table_translator@custom_phrase
     - lua_translator@date_time_translator
 
-
+  speller/alphabet: zyxwvutsrqponmlkjihgfedcba;ABCDEFGHIJKLMNOPQRSTUVWXYZ
+  speller/initials: zyxwvutsrqponmlkjihgfedcbaABCDEFGHIJKLMNOPQRSTUVWXYZ
   speller/algebra:
     - erase/^xx$/
     - derive/^([a-z;]+):\w+/$1/
