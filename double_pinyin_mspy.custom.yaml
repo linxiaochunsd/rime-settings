@@ -41,76 +41,27 @@ patch:
   speller/alphabet: zyxwvutsrqponmlkjihgfedcba;ABCDEFGHIJKLMNOPQRSTUVWXYZ
   speller/initials: zyxwvutsrqponmlkjihgfedcbaABCDEFGHIJKLMNOPQRSTUVWXYZ
   speller/algebra:
-    - erase/^xx$/
+#    - erase/^xx$/
+
+
+#    - xform/://
     - derive/^([a-z;]+):\w+/$1/
-    - xform/^([aoe].*)$/o$1/
-    - xform/^([ae])(.*)$/$1$1$2/
-    - xform/iu$/Q/
-    - xform/[iu]a$/W/
-    - xform/er$|[uv]an$/R/
-    - xform/[uv]e$/T/
-    - xform/v$|uai$/Y/
-    - xform/^sh/U/
-    - xform/^ch/I/
-    - xform/^zh/V/
-    - xform/uo$/O/
-    - xform/[uv]n$/P/
-    - xform/i?ong$/S/
-    - xform/[iu]ang$/D/
-    - xform/(.)en$/$1F/
-    - xform/(.)eng$/$1G/
-    - xform/(.)ang$/$1H/
-    - xform/ian$/M/
-    - xform/(.)an$/$1J/
-    - xform/iao$/C/
-    - xform/(.)ao$/$1K/
-    - xform/(.)ai$/$1L/
-    - xform/(.)ei$/$1Z/
-    - xform/ie$/X/
-    - xform/ui$/V/
-    - derive/T$/V/
-    - xform/(.)ou$/$1B/
-    - xform/in$/N/
-    - xform/ing$/;/
+#    - xform/^([a-z;]+):(\w)(\w)/$1$2$3/
+#    - abbrev/^([a-z;]+):(\w)\w+/$1$2/
+#    - abbrev/^([a-z;]+):\w+/$1/
+    - xform/://
+#    - abbrev/://
+#    - abbrev/://
 
-    - xform/^([aoe].*):/o$1:/
-    - xform/iu:/Q/
-    - xform/[iu]a:/W/
-    - xform/er:|[uv]an:/R/
-    - xform/[uv]e:/T/
-    - xform/v:|uai:/Y/
-    - xform/^sh/U/
-    - xform/^ch/I/
-    - xform/^zh/V/
-    - xform/uo:/O/
-    - xform/[uv]n:/P/
-    - xform/i?ong:/S/
-    - xform/[iu]ang:/D/
-    - xform/(.)en:/$1F/
-    - xform/(.)eng:/$1G/
-    - xform/(.)ang:/$1H/
-    - xform/ian:/M/
-    - xform/(.)an:/$1J/
-    - xform/iao:/C/
-    - xform/(.)ao:/$1K/
-    - xform/(.)ai:/$1L/
-    - xform/(.)ei:/$1Z/
-    - xform/ie:/X/
-    - xform/ui:/V/
-    - derive/T:/V/
-    - xform/(.)ou:/$1B/
-    - xform/in:/N/
-    - xform/ing:/;/
-    - xform/(.)([aoeuiv]):/$1$2/
-
-    - xlit/QWRTYUIOPSDFGHMJCKLZXVBN/qwrtyuiopsdfghmjcklzxvbn/
+    - xlit/ABCDEFGHIJKLMNOPQRSTUVWXYZ/abcdefghijklmnopqrstuvwxyz/
 
   double_assistant_reverse_lookup: #該反查濾鏡名
     tags: [ double_assistant_reverse_lookup_helper ] #挂在helper这个translator上
     overwrite_comment: true
-    dictionary: double_assistant #反查辅助码
+    dictionary: my_own.assist #反查辅助码
     comment_format:
-      - xform/([a-z;]{2}):([a-z]{2})/〔$2〕/
+      - xform/([a-z;]{2}):([\w]{2})/〔$2〕/
+      - xlit/ABCDEFGHIJKLMNOPQRSTUVWXYZ/abcdefghijklmnopqrstuvwxyz/
   custom_phrase:
     dictionary: ""
     user_dict: custom_phrase
@@ -123,24 +74,23 @@ patch:
     opencc_config: emoji.json
     option_name: emoji_suggestion
   translator:
-    dictionary: luna_pinyin.extended
+    dictionary: collection
     user_dict: my_dict
-#    spelling_hints: 3
+    spelling_hints: 10
 #    comment_format:
 #      - xform/.*([a-z]{2})$/[$1]/
-#    db_class: tabledb
+    db_class: tabledb
 
 
   double_assistant_reverse_lookup_helper:
     tag: double_assistant_reverse_lookup_helper
-    dictionary: double_assistant
+    dictionary: my_own.assist
     spelling_hints: 10
     enable_completion: true
     prefix: "`"
     suffix: ""
     tips: 〔反查辅助码〕
-    comment_format:
-      - xform/.*([a-z]{2})$/[$1]/
+
 
   __include: easy_en:/patch_double_pinyin_mspy
   easy_en/enable_sentence: false

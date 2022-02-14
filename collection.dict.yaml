@@ -1,0 +1,27 @@
+
+---
+name: collection
+version: "2016.06.26"
+sort: by_weight  #字典初始排序，可選original或by_weight
+vocabulary: essay-zh-hans
+
+import_tables:
+  - my_own.assist
+  - my_own
+  - my_own_rarely_used
+
+#  - luna_pinyin
+#  - luna_pinyin.xiandaihanyu
+#  - luna_pinyin.chengyusuyu
+#  - luna_pinyin.popular
+#  - luna_pinyin.computer
+#  - luna_pinyin.kaifa
+#  - luna_pinyin.poetry
+  - luna_pinyin.chat
+#  - luna_pinyin.place
+#  - luna_pinyin.website
+#  - luna_pinyin.mingxing
+#  - zhwiki
+#  - luna_pinyin_assistant
+#  - double_assistant
+...
