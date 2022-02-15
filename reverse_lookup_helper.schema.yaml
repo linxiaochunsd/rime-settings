@@ -53,7 +53,8 @@ speller:
   initials: 'abcdefghijklmnopqrstuvwxyz'
   delimiter: " '"
   algebra:
-    - xform/^([a-z;]+):([a-z]+)/$1$2/
+    - xform/^([a-z;]+):([A-Z]+)/$1$2/
+    - xlit/ABCDEFGHIJKLMNOPQRSTUVWXYZ/abcdefghijklmnopqrstuvwxyz/
 
 custom_phrase:
   dictionary: ""
