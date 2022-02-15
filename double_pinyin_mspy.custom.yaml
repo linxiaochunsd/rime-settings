@@ -41,18 +41,8 @@ patch:
   speller/alphabet: zyxwvutsrqponmlkjihgfedcba;ABCDEFGHIJKLMNOPQRSTUVWXYZ
   speller/initials: zyxwvutsrqponmlkjihgfedcbaABCDEFGHIJKLMNOPQRSTUVWXYZ
   speller/algebra:
-#    - erase/^xx$/
-
-
-#    - xform/://
     - derive/^([a-z;]+):\w+/$1/
-#    - xform/^([a-z;]+):(\w)(\w)/$1$2$3/
-#    - abbrev/^([a-z;]+):(\w)\w+/$1$2/
-#    - abbrev/^([a-z;]+):\w+/$1/
     - xform/://
-#    - abbrev/://
-#    - abbrev/://
-
     - xlit/ABCDEFGHIJKLMNOPQRSTUVWXYZ/abcdefghijklmnopqrstuvwxyz/
 
   double_assistant_reverse_lookup: #該反查濾鏡名
@@ -76,10 +66,10 @@ patch:
   translator:
     dictionary: collection
     user_dict: my_dict
-    spelling_hints: 10
+#    spelling_hints: 10
 #    comment_format:
-#      - xform/.*([a-z]{2})$/[$1]/
-    db_class: tabledb
+#      - xform/.*([A-Z]{2})$/[$1]/
+#    db_class: tabledb
 
 
   double_assistant_reverse_lookup_helper:
