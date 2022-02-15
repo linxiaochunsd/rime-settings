@@ -10,18 +10,19 @@ patch:
       states: [ "Hah", "😄" ]
     - name: full_shape
       states: [ 半, 全 ]
-    - name: simplification
-      reset: 1
-      states: [繁, 简]
+    - name: tranditional_converter
+      reset: 0
+      states: [简,繁]
     - name: ascii_punct
       reset: 1
       states: ["。，",". ," ]
   schema/name: "微软双拼++"
+
   schema/dependencies:
     - reverse_lookup_helper
   engine/filters:
     - reverse_lookup_filter@double_assistant_reverse_lookup
-    - simplifier
+    - simplifier@tranditional_converter
     - simplifier@emoji_suggestion
     - uniquifier
   engine/segmentors:
@@ -60,6 +61,9 @@ patch:
     enable_sentence: false
     initial_quality: 1
 
+  tranditional_converter:
+    opencc_config: s2t.json
+    option_name: tranditional_converter
   emoji_suggestion:
     opencc_config: emoji.json
     option_name: emoji_suggestion
