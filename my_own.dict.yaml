@@ -4366,7 +4366,6 @@ use_preset_vocabulary: false
 滚	gp
 攸	yb
 薰	xp
-霑	vj
 诱	yb
 钝	dp
 杼	vu
@@ -6530,7 +6529,6 @@ use_preset_vocabulary: false
 毓	yu
 璐	lu
 膑	bn
-璿	xr
 孛	bz
 矻	ku
 帷	wz
@@ -9400,6 +9398,7 @@ use_preset_vocabulary: false
 檺	gk
 檼	yn
 檽	nb
+檾	q;
 檿	yj
 櫀	qi
 櫁	mi
@@ -10826,7 +10825,6 @@ use_preset_vocabulary: false
 狌	ug
 狍	pk
 狎	xw
-翫	wj
 狏	to
 狑	l;
 狒	fz
@@ -11619,7 +11617,7 @@ use_preset_vocabulary: false
 睥	pi	3.57%
 睧	hp
 睩	lu
-睾	gk
+睪	yi
 睭	vb
 睮	yu
 睯	hp
@@ -11634,6 +11632,7 @@ use_preset_vocabulary: false
 睸	mz
 睻	xr
 睼	ti
+睾	gk
 瞁	xu
 瞂	fa
 瞃	wo
@@ -15193,7 +15192,6 @@ use_preset_vocabulary: false
 蹜	su
 蹝	xi
 蹞	kv
-蹠	vi
 蹡	qd
 蹢	di
 蹥	lm
@@ -15792,7 +15790,6 @@ use_preset_vocabulary: false
 銾	hs
 銿	vs
 鋀	tb
-镅	mz
 鋄	wj
 鋆	yp
 鋈	wu
@@ -15960,6 +15957,7 @@ use_preset_vocabulary: false
 鐑	qi
 鐕	zj
 鐖	ji
+鐗	jm
 鐚	ya
 鐛	y;
 鐜	dv
@@ -15977,7 +15975,6 @@ use_preset_vocabulary: false
 鐻	ju
 𫟼	da
 鐾	bz
-锿	ol
 鑁	zs
 鑂	xp
 鑃	dc
@@ -16119,8 +16116,10 @@ use_preset_vocabulary: false
 锸	ia
 锼	sb
 锽	hd
+锿	ol
 镃	zi
 镄	fz
+镅	mz
 镆	mo
 镉	ge
 镊	nx
@@ -16132,6 +16131,7 @@ use_preset_vocabulary: false
 镘	mj
 镙	lo
 镛	ys
+镟	xr
 镠	lq
 镡	xn
 镢	jt
@@ -16602,7 +16602,6 @@ use_preset_vocabulary: false
 餂	tm
 餆	yk
 餇	ts
-餈	ci
 餋	jr
 餙	ui
 餝	ui
@@ -23204,6 +23203,7 @@ use_preset_vocabulary: false
 厵	yr
 咗	zo
 咷	tk
+唚	qn
 唨	zu
 啗	dj
 啣	xm
@@ -23227,6 +23227,7 @@ use_preset_vocabulary: false
 圙	lt
 圙	lv
 坵	qq
+垵	oj
 堓	oj
 堿	jm
 塂	jd
@@ -23260,6 +23261,7 @@ use_preset_vocabulary: false
 嶎	yu
 嶥	jt
 嶥	jv
+嶴	ok
 巪	ju
 幱	lj
 庂	ze
@@ -23267,6 +23269,7 @@ use_preset_vocabulary: false
 廤	ku
 廱	ys
 彊	qd
+彞	yi
 徚	ds
 徺	jc
 忷	xs
@@ -23292,6 +23295,7 @@ use_preset_vocabulary: false
 摉	sb
 撢	dj
 撶	hw
+擡	tl
 敩	xc
 敽	jc
 斏	lh
@@ -23301,6 +23305,7 @@ use_preset_vocabulary: false
 朑	ti
 杇	wu
 杧	mh
+杴	xm
 枬	vj
 栐	ys
 桗	do
@@ -23317,6 +23322,7 @@ use_preset_vocabulary: false
 櫉	iu
 櫐	lz
 櫷	gv
+櫺	l;
 欎	yu
 歚	uj
 殀	yk
@@ -23433,6 +23439,7 @@ use_preset_vocabulary: false
 裇	xu
 褎	xq
 𫌀	ji
+襆	fu
 襔	mj
 覀	ya
 覸	jm
@@ -23469,7 +23476,6 @@ use_preset_vocabulary: false
 鎗	qd
 𨱏	da
 鎼	xw
-镟	xr
 𫔎	jt
 𫔎	jv
 𨱔	zp
@@ -23483,6 +23489,7 @@ use_preset_vocabulary: false
 霻	fg
 靌	bk
 靎	he
+鞀	tk
 颴	xr
 飅	lq
 飤	si
@@ -23492,13 +23499,16 @@ use_preset_vocabulary: false
 𫘝	jv
 𫘨	ti
 鬝	qm
+鮕	gu
 𩽾	oj
 𩾃	mm
 鰙	ro
 𫚕	ui
 𩾌	kh
 鵉	lr
+鷈	ti
 鼟	tg
+齇	va
 𠂆	yi
 𠂇	zo
 𠂔	zi

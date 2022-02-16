@@ -2205,7 +2205,6 @@ use_preset_vocabulary: false
 禾	he:PD	-1
 禾	he:PM	-1
 穗	sv:HH	-1
-穗	sv:SH	-1
 秉	b;:HA	-1
 秉	b;:HV	-1
 秉	b;:PD	-1
@@ -2503,6 +2502,9 @@ use_preset_vocabulary: false
 享	xd:WZ	-1
 享	xd:ZK	-1
 玩	wj:WY	-1
+玩	wj:YB	-1
+玩	wj:YX	-1
+玩	wj:YY	-1
 趟	th:ZU	-1
 跃	yt:ZY	-1
 跃	yt:ZD	-1
@@ -4284,6 +4286,7 @@ use_preset_vocabulary: false
 愈	yu:BY	-1
 愈	yu:XY	-1
 沾	vj:DV	-1
+沾	vj:YV	-1
 徒	tu:RZ	-1
 徒	tu:XZ	-1
 洁	jx:DJ	-1
@@ -5074,7 +5077,6 @@ use_preset_vocabulary: false
 丱	gr:AA	-1
 丱	gr:VU	-1
 戚	qi:GX	-1
-戚	qi:JQ	-1
 戚	qi:WX	-1
 戚	qi:XQ	-1
 丳	ij:AA	-1
@@ -7382,7 +7384,6 @@ use_preset_vocabulary: false
 拟	ni:TY	-1
 凇	ss:DS	-1
 彝	yi:AC	-1
-彝	yi:CF	-1
 彝	yi:CS	-1
 彝	yi:JC	-1
 彝	yi:VC	-1
@@ -7586,6 +7587,9 @@ use_preset_vocabulary: false
 熙	xi:DS	-1
 熙	xi:HS	-1
 琨	kp:WK	-1
+璇	xr:WM	-1
+璇	xr:WO	-1
+璇	xr:WR	-1
 璇	xr:WX	-1
 禹	yu:PD	-1
 锡	xi:JY	-1
@@ -7620,7 +7624,6 @@ use_preset_vocabulary: false
 滚	gp:DY	-1
 攸	yb:RW	-1
 薰	xp:CX	-1
-霑	vj:YV	-1
 诱	yb:YX	-1
 钝	dp:JT	-1
 杼	vu:MY	-1
@@ -8554,7 +8557,6 @@ use_preset_vocabulary: false
 吢	qn:KX	-1
 吢	qn:XK	-1
 吣	qn:KX	-1
-吣	qn:KY	-1
 吤	jx:KJ	-1
 吥	bu:KB	-1
 唧	ji:KJ	-1
@@ -9559,7 +9561,6 @@ use_preset_vocabulary: false
 埫	is:TU	-1
 埭	dl:TL	-1
 埮	tj:TY	-1
-埯	oj:TA	-1
 埯	oj:TD	-1
 埯	oj:TY	-1
 埱	iu:TU	-1
@@ -10487,9 +10488,6 @@ use_preset_vocabulary: false
 璐	lu:WL	-1
 膑	bn:OB	-1
 膑	bn:YB	-1
-璿	xr:WM	-1
-璿	xr:WO	-1
-璿	xr:WR	-1
 孛	bz:UZ	-1
 孛	bz:ZB	-1
 矻	ku:UQ	-1
@@ -10824,7 +10822,6 @@ use_preset_vocabulary: false
 岕	jx:UJ	-1
 岖	qu:UQ	-1
 岘	xm:UJ	-1
-岙	ok:UA	-1
 岙	ok:UY	-1
 岙	ok:YU	-1
 岜	ba:UB	-1
@@ -11272,9 +11269,6 @@ use_preset_vocabulary: false
 幞	fu:JD	-1
 幞	fu:JF	-1
 幞	fu:JP	-1
-幞	fu:YD	-1
-幞	fu:YF	-1
-幞	fu:YP	-1
 幠	hu:JW	-1
 幤	bi:JI	-1
 幤	bi:JW	-1
@@ -13184,7 +13178,6 @@ use_preset_vocabulary: false
 撎	yi:FY	-1
 撎	yi:TY	-1
 锏	jm:JJ	-1
-锏	jm:JX	-1
 撔	hs:FJ	-1
 撔	hs:TJ	-1
 撖	hj:FG	-1
@@ -14589,7 +14582,6 @@ use_preset_vocabulary: false
 梾	ll:ML	-1
 梿	lm:ML	-1
 棁	vo:MD	-1
-棂	l;:MK	-1
 棂	l;:ML	-1
 棂	l;:MW	-1
 棃	li:MD	-1
@@ -15055,6 +15047,8 @@ use_preset_vocabulary: false
 檼	yn:MJ	-1
 檼	yn:MX	-1
 檽	nb:MX	-1
+檾	q;:HL	-1
+檾	q;:LB	-1
 檿	yj:IM	-1
 檿	yj:MQ	-1
 檿	yj:MY	-1
@@ -16932,9 +16926,6 @@ use_preset_vocabulary: false
 狌	ug:QU	-1
 狍	pk:QB	-1
 狎	xw:QJ	-1
-翫	wj:YB	-1
-翫	wj:YX	-1
-翫	wj:YY	-1
 狏	to:QY	-1
 狑	l;:QL	-1
 狒	fz:QF	-1
@@ -18020,9 +18011,7 @@ use_preset_vocabulary: false
 睧	hp:OH	-1
 睩	lu:ML	-1
 睩	lu:OL	-1
-睾	gk:PX	-1
-睾	gk:SX	-1
-睾	gk:PS	-1
+睪	yi:SX	-1
 睭	vb:MV	-1
 睭	vb:OV	-1
 睮	yu:MY	-1
@@ -18053,6 +18042,8 @@ use_preset_vocabulary: false
 睻	xr:OX	-1
 睼	ti:MU	-1
 睼	ti:OU	-1
+睾	gk:PX	-1
+睾	gk:PS	-1
 瞁	xu:MJ	-1
 瞁	xu:MQ	-1
 瞁	xu:OJ	-1
@@ -19282,6 +19273,7 @@ use_preset_vocabulary: false
 糌	zj:MR	-1
 糌	zj:MZ	-1
 糍	ci:MZ	-1
+糍	ci:UC	-1
 糎	li:ML	-1
 糏	xx:MX	-1
 糐	fu:MC	-1
@@ -19804,7 +19796,6 @@ use_preset_vocabulary: false
 舐	ui:UU	-1
 蒋	jd:CJ	-1
 饕	tk:UH	-1
-锨	xm:MQ	-1
 锨	xm:JX	-1
 耋	dx:LV	-1
 耇	gb:LJ	-1
@@ -22783,7 +22774,6 @@ use_preset_vocabulary: false
 蹝	xi:ZV	-1
 蹝	xi:ZX	-1
 蹞	kv:ZQ	-1
-蹠	vi:ZU	-1
 蹡	qd:ZJ	-1
 蹢	di:ZD	-1
 蹥	lm:ZL	-1
@@ -23298,9 +23288,7 @@ use_preset_vocabulary: false
 酏	yi:YY	-1
 酐	gj:YG	-1
 酑	yu:YY	-1
-齄	va:BC	-1
 齄	va:BI	-1
-齄	va:BQ	-1
 酓	yj:YJ	-1
 酔	zv:YU	-1
 酔	zv:YZ	-1
@@ -23525,7 +23513,6 @@ use_preset_vocabulary: false
 銾	hs:JG	-1
 銿	vs:JY	-1
 鋀	tb:JD	-1
-镅	mz:JM	-1
 鋄	wj:JY	-1
 鋆	yp:JJ	-1
 鋈	wu:JW	-1
@@ -23721,6 +23708,7 @@ use_preset_vocabulary: false
 鐕	zj:JQ	-1
 鐕	zj:JR	-1
 鐖	ji:JJ	-1
+鐗	jm:JX	-1
 鐚	ya:JE	-1
 鐛	y;:JJ	-1
 鐜	dv:JD	-1
@@ -23741,7 +23729,6 @@ use_preset_vocabulary: false
 𫟼	da:JD	-1
 鐾	bz:JB	-1
 鐾	bz:JX	-1
-锿	ol:JA	-1
 鑁	zs:JW	-1
 鑂	xp:JX	-1
 鑃	dc:JD	-1
@@ -23907,8 +23894,10 @@ use_preset_vocabulary: false
 锼	sb:JS	-1
 锼	sb:JY	-1
 锽	hd:JH	-1
+锿	ol:JA	-1
 镃	zi:JZ	-1
 镄	fz:JF	-1
+镅	mz:JM	-1
 镆	mo:JM	-1
 镉	ge:JG	-1
 镊	nx:JN	-1
@@ -23923,6 +23912,7 @@ use_preset_vocabulary: false
 镘	mj:JM	-1
 镙	lo:JL	-1
 镛	ys:JY	-1
+镟	xr:JX	-1
 镠	lq:JL	-1
 镠	lq:JP	-1
 镡	xn:JT	-1
@@ -24522,7 +24512,6 @@ use_preset_vocabulary: false
 餂	tm:UU	-1
 餆	yk:UV	-1
 餇	ts:UT	-1
-餈	ci:UC	-1
 餋	jr:JU	-1
 餋	jr:UF	-1
 餙	ui:UX	-1
@@ -25645,7 +25634,6 @@ use_preset_vocabulary: false
 鼔	gu:PH	-1
 鼔	gu:UY	-1
 鼖	ff:GH	-1
-鼗	tk:GV	-1
 鼗	tk:VG	-1
 鼘	yr:HS	-1
 鼘	yr:GA	-1
@@ -25792,8 +25780,6 @@ use_preset_vocabulary: false
 䍁	sv:SS	-1
 䓕	to:CY	-1
 䗖	di:ID	-1
-䜧	nk:YS	-1
-䜧	nk:YV	-1
 䜣	xi:YJ	-1
 䝙	iu:VQ	-1
 䞐	ip:BI	-1
@@ -25855,6 +25841,7 @@ use_preset_vocabulary: false
 厵	yr:YY	-1
 咗	zo:KZ	-1
 咷	tk:KV	-1
+唚	qn:KY	-1
 唨	zu:KZ	-1
 啗	dj:KJ	-1
 啗	dj:KX	-1
@@ -25884,6 +25871,7 @@ use_preset_vocabulary: false
 圙	lt:KM	-1
 圙	lv:KM	-1
 坵	qq:TQ	-1
+垵	oj:TA	-1
 堓	oj:TA	-1
 堿	jm:TX	-1
 塂	jd:TX	-1
@@ -25923,6 +25911,7 @@ use_preset_vocabulary: false
 嶥	jt:UQ	-1
 嶥	jv:UJ	-1
 嶥	jv:UQ	-1
+嶴	ok:UA	-1
 巪	ju:JA	-1
 巪	ju:JV	-1
 幱	lj:JJ	-1
@@ -25934,6 +25923,7 @@ use_preset_vocabulary: false
 廱	ys:GV	-1
 廱	ys:GY	-1
 彊	qd:GJ	-1
+彞	yi:CF	-1
 徚	ds:RJ	-1
 徚	ds:XJ	-1
 徺	jc:RY	-1
@@ -25979,6 +25969,8 @@ use_preset_vocabulary: false
 撢	dj:TT	-1
 撶	hw:FH	-1
 撶	hw:TH	-1
+擡	tl:FT	-1
+擡	tl:TT	-1
 敩	xc:WX	-1
 敽	jc:PQ	-1
 敽	jc:YY	-1
@@ -25992,6 +25984,7 @@ use_preset_vocabulary: false
 朑	ti:YU	-1
 杇	wu:MK	-1
 杧	mh:MW	-1
+杴	xm:MQ	-1
 枬	vj:MD	-1
 栐	ys:MY	-1
 桗	do:MD	-1
@@ -26011,6 +26004,8 @@ use_preset_vocabulary: false
 櫉	iu:MI	-1
 櫐	lz:ML	-1
 櫷	gv:MG	-1
+櫺	l;:MK	-1
+櫺	l;:ML	-1
 欎	yu:MC	-1
 歚	uj:QU	-1
 殀	yk:DY	-1
@@ -26182,6 +26177,9 @@ use_preset_vocabulary: false
 褎	xq:WY	-1
 褎	xq:YH	-1
 𫌀	ji:YZ	-1
+襆	fu:YD	-1
+襆	fu:YF	-1
+襆	fu:YP	-1
 襔	mj:YR	-1
 覀	ya:XI	-1
 覀	ya:AA	-1
@@ -26226,7 +26224,6 @@ use_preset_vocabulary: false
 𨱏	da:JD	-1
 𨱏	da:JH	-1
 鎼	xw:JU	-1
-镟	xr:JX	-1
 𫔎	jt:JK	-1
 𫔎	jt:JY	-1
 𫔎	jv:JK	-1
@@ -26245,6 +26242,7 @@ use_preset_vocabulary: false
 靌	bk:YB	-1
 靎	he:YN	-1
 靎	he:YQ	-1
+鞀	tk:GV	-1
 颴	xr:FP	-1
 飅	lq:FL	-1
 飤	si:UR	-1
@@ -26257,6 +26255,7 @@ use_preset_vocabulary: false
 𫘨	ti:MU	-1
 鬝	qm:BJ	-1
 鬝	qm:IJ	-1
+鮕	gu:YG	-1
 𩽾	oj:YA	-1
 𩾃	mm:YM	-1
 鰙	ro:YR	-1
@@ -26264,8 +26263,11 @@ use_preset_vocabulary: false
 𩾌	kh:YK	-1
 鵉	lr:NY	-1
 鵉	lr:YN	-1
+鷈	ti:NH	-1
 鼟	tg:HH	-1
 鼟	tg:GD	-1
+齇	va:BC	-1
+齇	va:BQ	-1
 璴	iu:WI	-1
 櫊	ge:MG	-1
 鎆	qm:JQ	-1
