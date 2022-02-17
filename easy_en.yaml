@@ -19,7 +19,7 @@ patch:
     __include: easy_en.schema:/translator
     enable_completion: true
     enable_sentence: true
-    initial_quality: -1
+    initial_quality: 0.2
   recognizer/patterns/uppercase: ''
   speller/alphabet:
     __include: easy_en.schema:/speller/alphabet

@@ -43,6 +43,7 @@ patch:
   speller/initials: zyxwvutsrqponmlkjihgfedcbaABCDEFGHIJKLMNOPQRSTUVWXYZ
   speller/algebra:
     - derive/^([a-z;]+):\w+/$1/
+    - derive/^([a-z;]+):(\w)\w+/$1$2/
     - xform/://
     - xlit/ABCDEFGHIJKLMNOPQRSTUVWXYZ/abcdefghijklmnopqrstuvwxyz/
 
@@ -70,6 +71,7 @@ patch:
   translator:
     dictionary: collection
     user_dict: my_dict
+    initial_quality: 0.9
 #    spelling_hints: 10
 #    comment_format:
 #      - xform/.*([A-Z]{2})$/[$1]/

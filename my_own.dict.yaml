@@ -1,6 +1,6 @@
 ---
 name: my_own
-version: 2022-02-16
+version: 2022-02-17
 sort: by_weight
 use_preset_vocabulary: false
 ...
@@ -5417,8 +5417,7 @@ use_preset_vocabulary: false
 嗥	hk
 嗨	hl
 嗬	he
-嗯	of
-嗯  ng
+嗯	ng
 嗵	ts
 嗷	ok
 嗸	ok

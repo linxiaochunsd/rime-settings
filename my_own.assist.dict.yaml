@@ -1,6 +1,6 @@
 ---
 name: my_own.assist
-version: 2022-02-16
+version: 2022-02-17
 sort: by_weight
 use_preset_vocabulary: false
 ...
@@ -9050,7 +9050,7 @@ use_preset_vocabulary: false
 嗨	hl:KH	-1
 嗬	he:KH	-1
 嗯	of:KE	-1
-嗯  ng:KE   -1
+嗯	ng:KE   -1
 嗵	ts:KT	-1
 嗷	ok:KA	-1
 嗷	ok:KW	-1
