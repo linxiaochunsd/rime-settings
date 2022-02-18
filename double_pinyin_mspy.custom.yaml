@@ -52,6 +52,7 @@ patch:
     tags: [ double_assistant_reverse_lookup_helper ] #挂在helper这个translator上
     overwrite_comment: true
     dictionary: my_own.assist #反查辅助码
+    user_dict: my_dict
     comment_format:
       - xform/([a-z;]{2}):([\w]{2})/〔$2〕/
       - xlit/ABCDEFGHIJKLMNOPQRSTUVWXYZ/abcdefghijklmnopqrstuvwxyz/
@@ -111,7 +112,7 @@ patch:
       - "xform/(^|[ '])u/$1sh/"
       - xform/([jqxy])v/$1u/
       - xform/([nl])v/$1ü/
-      - xform/([\w;ü]+)/[$1]/
+#      - xform/([\w;ü]+)/[$1]/
 #    spelling_hints: 10
 #    comment_format:
 #      - xform/.*([A-Z]{2})$/[$1]/
@@ -121,6 +122,7 @@ patch:
   double_assistant_reverse_lookup_helper:
     tag: double_assistant_reverse_lookup_helper
     dictionary: my_own.assist
+    user_dict: my_dict
     spelling_hints: 10
     enable_completion: true
     prefix: "`"
