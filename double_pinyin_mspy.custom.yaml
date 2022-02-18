@@ -52,7 +52,6 @@ patch:
     tags: [ double_assistant_reverse_lookup_helper ] #挂在helper这个translator上
     overwrite_comment: true
     dictionary: my_own.assist #反查辅助码
-    user_dict: my_dict
     comment_format:
       - xform/([a-z;]{2}):([\w]{2})/〔$2〕/
       - xlit/ABCDEFGHIJKLMNOPQRSTUVWXYZ/abcdefghijklmnopqrstuvwxyz/
@@ -122,7 +121,6 @@ patch:
   double_assistant_reverse_lookup_helper:
     tag: double_assistant_reverse_lookup_helper
     dictionary: my_own.assist
-    user_dict: my_dict
     spelling_hints: 10
     enable_completion: true
     prefix: "`"
