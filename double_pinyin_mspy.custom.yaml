@@ -39,7 +39,7 @@ patch:
     - table_translator@custom_phrase
     - lua_translator@date_time_translator
 
-  speller/delimiter: ""
+#  speller/delimiter: "'"
   speller/alphabet: zyxwvutsrqponmlkjihgfedcba;ABCDEFGHIJKLMNOPQRSTUVWXYZ
   speller/initials: zyxwvutsrqponmlkjihgfedcbaABCDEFGHIJKLMNOPQRSTUVWXYZ
   speller/algebra:
@@ -112,7 +112,7 @@ patch:
       - "xform/(^|[ '])u/$1sh/"
       - xform/([jqxy])v/$1u/
       - xform/([nl])v/$1ü/
-#      - xform/([\w;ü]+)/[$1]/
+      - xform/([\w;ü]+)/\{$1\}/
 #    spelling_hints: 10
 #    comment_format:
 #      - xform/.*([A-Z]{2})$/[$1]/
