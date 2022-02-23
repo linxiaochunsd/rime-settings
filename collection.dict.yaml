@@ -8,4 +8,9 @@ vocabulary: essay-zh-hans
 import_tables:
   - my_own.assist
   - my_own
+  - chengyusuyu
+  - popular
+  - place
+  - poetry
+  - it
 ...

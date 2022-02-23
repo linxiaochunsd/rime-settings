@@ -6,7 +6,7 @@ patch:
     #   reset: 0
     #   states: [ 中文, Eng ]
     - name: emoji_suggestion
-      reset: 1
+      reset: 0
       states: [ "Hah", "😄" ]
     - name: full_shape
       states: [ 半, 全 ]
@@ -111,7 +111,7 @@ patch:
       - "xform/(^|[ '])u/$1sh/"
       - xform/([jqxy])v/$1u/
       - xform/([nl])v/$1ü/
-      - xform/([\w;ü]+)/\{$1\}/
+        #      - xform/([\w;ü]+)/\{$1\}/
 #    spelling_hints: 10
 #    comment_format:
 #      - xform/.*([A-Z]{2})$/[$1]/
