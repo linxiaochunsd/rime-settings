@@ -13,4 +13,5 @@ import_tables:
   - place
   - poetry
   - it
+  - fix_phrases
 ...

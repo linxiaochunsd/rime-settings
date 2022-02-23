@@ -1,3 +1,4 @@
+import itertools
 import os
 import time
 import re
@@ -9,7 +10,6 @@ from pypinyin import pinyin as Pinyin
 from pypinyin_dict.pinyin_data import zdic
 
 zdic.load()
-
 
 def returnEmpty(chars):
     return [""]
@@ -154,18 +154,22 @@ class DoublePinyinConverter(object):
 
 
 converter = DoublePinyinConverter(rules)
-
-
+def phrase_converter(pinyins):
+    dss = []
+    for p in pinyins:
+        dss.append(converter(p))
+    return [ list(i) for i in itertools.product(*dss)]
 class Pronunciation(object):
     def __init__(self, p):
         self.p = p
         self.stats = 0
         self.phrases = dict()
 
-    def add_phrase(self, phrase, stats):
+    def add_phrase(self, phrase, stats, pinyins):
+
         if phrase in self.phrases:
             return
-        self.phrases[phrase] = True
+        self.phrases[phrase] = pinyins
         self.stats += stats
 
 
@@ -187,10 +191,10 @@ class Char(object):
         if self.stats < stats:
             self.stats = stats
 
-    def add_phrase(self, pinyin, phrase, stats):
+    def add_phrase(self, pinyin, phrase, stats, pinyins):
         if pinyin not in self.pinyins:
             self.pinyins[pinyin] = Pronunciation(pinyin)
-        self.pinyins[pinyin].add_phrase(phrase, stats)
+        self.pinyins[pinyin].add_phrase(phrase, stats, pinyins)
 
     def add_ass_code(self, assis_code):
         self.assis_codes[assis_code] = True
@@ -207,6 +211,7 @@ class Char(object):
         rarely_limit = 10
         doubles_res = []
         double_assists_res = []
+        fix_phrases = []
 
         # if rarely_used and self.stats > rarely_limit:
         #     return doubles_res, double_assists_res
@@ -222,6 +227,13 @@ class Char(object):
                 if total_num == 0:
                     freq = "\t%.2f%%" % (1 / len(self.pinyins) * 100)
                 else:
+                    freq_ratio = self.pinyins[pinyin].stats / total_num
+                    if freq_ratio < 0.1:
+                        for phrase in self.pinyins[pinyin].phrases:
+                            dss = phrase_converter(self.pinyins[pinyin].phrases[phrase])
+                            for ds in dss:
+                                phrase_double = " ".join(ds)
+                                fix_phrases.append(phrase +"\t"+phrase_double + "\n")
                     freq = "\t%.2f%%" % (self.pinyins[pinyin].stats / total_num * 100)
             doubles = converter(pinyin)
             for double in doubles:
@@ -232,7 +244,7 @@ class Char(object):
                 for ac in self.assis_codes:
                     double_assists_res.append(line + ":" + ac.upper() + "\t-1" + "\n")
 
-        return doubles_res, double_assists_res
+        return doubles_res, double_assists_res,fix_phrases
 
 
 T2S = opencc.OpenCC('t2s')
@@ -302,7 +314,7 @@ class CharSet(object):
             self.mapping[char].set_stats(stats)
         self.mapping[char].new_pinyin(pinyin)
 
-    def add_phrase_char(self, char, pinyin, phrase, stats):
+    def add_phrase_char(self, char, pinyin, phrase, stats, pinyins):
         # if char == "聂":
         #     print(char,pinyin,stats)
         if pinyin == "":
@@ -310,7 +322,7 @@ class CharSet(object):
         if char not in self.mapping:
             self.mapping[char] = Char(char, 0)
 
-        self.mapping[char].add_phrase(pinyin, phrase, stats)
+        self.mapping[char].add_phrase(pinyin, phrase, stats, pinyins)
 
     def add_ass_code(self, char, assis_code):
         if char in self.mapping:
@@ -320,13 +332,13 @@ class CharSet(object):
         if char not in self.mapping:
             return None
 
-        doubles, double_assists = self.mapping[char].output()
+        doubles, double_assists,fix_phrases = self.mapping[char].output()
         print(self.mapping[char].char, self.mapping[char].stats)
         for pinyin in self.mapping[char].pinyins:
             print(pinyin, self.mapping[char].pinyins[pinyin].stats, self.mapping[char].pinyins[pinyin].phrases.items())
         print(self.mapping[char].assis_codes.items())
 
-        return doubles, double_assists
+        return doubles, double_assists,fix_phrases
 
     def output(self, dict_name, rarelay_used=False):
         version = time.strftime("%Y-%m-%d", time.localtime(time.time()))
@@ -351,9 +363,21 @@ use_preset_vocabulary: false
 """
         double_assists_f.write(header)
 
+        dict_name = "fix_phrases"
+        fix_phrases_f = open("../"+dict_name + ".dict.yaml", "w")
+        header = f"""---
+name: {dict_name}
+version: {version}
+sort: by_weight
+use_preset_vocabulary: false
+...
+"""
+        fix_phrases_f.write(header)
+
         for c in self.mapping:
             # print(c,self.mapping[c])
-            doubles, double_assists = self.mapping[c].output(rarelay_used)
+            doubles, double_assists,fix_phrases = self.mapping[c].output(rarelay_used)
+            fix_phrases_f.writelines(fix_phrases)
             doubles_f.writelines(doubles)
             double_assists_f.writelines(double_assists)
 
@@ -387,7 +411,7 @@ use_preset_vocabulary: false
                     char = phrase[i]
                     char_pinyins = pinyins[i]
                     for char_pinyin in char_pinyins:
-                        self.add_phrase_char(char, char_pinyin, phrase, stats)
+                        self.add_phrase_char(char, char_pinyin, phrase, stats,[i[0] for i in pinyins])
 
     def scan_dict(self, dict_file):
         with open(dict_file, "r") as src:
@@ -415,12 +439,50 @@ use_preset_vocabulary: false
                     continue
 
                 pinyins = get_pinyin(phrase)
-
+                if len(pinyins) !=len(phrase):
+                    continue
                 for i in range(len(phrase)):
                     char = phrase[i]
                     char_pinyins = pinyins[i]
                     for char_pinyin in char_pinyins:
-                        self.add_phrase_char(char, char_pinyin, phrase, stats)
+                        self.add_phrase_char(char, char_pinyin, phrase, stats, [i[0] for i in pinyins])
+
+    def scan_dict_with_pinyin(self, dict_file):
+        with open(dict_file, "r") as src:
+            while True:
+                line = src.readline()
+                if not line:
+                    break
+                if is_header(line):
+                    continue
+                splits = line.split("\t")
+                if len(splits) < 2:
+                    continue
+
+                ori_phrase = splits[0]
+                phrase = T2S.convert(ori_phrase)
+                if miss_font(phrase):
+                    continue
+                stats = 0
+                if len(phrase) == 1:  # 单字
+                    char = phrase
+                    pinyins = get_pinyin(char)[0]
+
+                    for pinyin in pinyins:
+                        self.add_single_char(char, pinyin, stats)
+                    continue
+
+                pinyins = splits[1]
+                if len(pinyins) != len(phrase):
+                    continue
+
+
+                pinyins = pinyins.split(" ")
+                for i in range(len(phrase)):
+                    char = phrase[i]
+                    char_pinyin = pinyins[i]
+                    self.add_phrase_char(char, char_pinyin, phrase, stats, pinyins)
+
 
     def add_all_assis_codes(self, dict_file):
         with open(dict_file, "r") as src:
@@ -492,7 +554,14 @@ if __name__ == "__main__":
 
     charset = CharSet()
     charset.scan_essay(essay_file)
-    charset.scan_dict(dict_file)
+    charset.scan_dict_with_pinyin(dict_file)
+    charset.scan_dict_with_pinyin("luna_pinyin.place.dict.yaml")
+    charset.scan_dict_with_pinyin("luna_pinyin.chengyusuyu.dict.yaml")
+    charset.scan_dict_with_pinyin("luna_pinyin.xiandaihanyu.dict.yaml")
+    charset.scan_dict_with_pinyin("luna_pinyin.computer.dict.yaml")
+    charset.scan_dict_with_pinyin("luna_pinyin.kaifa.dict.yaml")
+    charset.scan_dict_with_pinyin("luna_pinyin.popular.dict.yaml")
+    # charset.scan_dict("luna_pinyin.popular.dict.yaml")
     charset.add_all_assis_codes(zrm_file)
 
     print(charset.find("聂"))

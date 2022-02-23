@@ -1,0 +1,1351 @@
+---
+name: fix_phrases
+version: 2022-02-23
+sort: by_weight
+use_preset_vocabulary: false
+...
+六安	lu oj
+六安地区	lu oj di qu
+六安市	lu oj ui
+射干	ye gj
+博闻强识	bo wf qd vi
+带标识	dl bc vi
+标识	bc vi
+标识符	bc vi fu
+款识	kr vi
+识记	vi ji
+钟鼎款识	vs d; kr vi
+万俟	mo qi
+一言中的	yi yj vs di
+一语中的	yi yu vs di
+一语破的	yi yu po di
+为目的	wz mu di
+众矢之的	vs ui vi di
+优质的	yb vi di
+品质的	pn vi di
+多目的	do mu di
+性质的	x; vi di
+打的	da di
+指标的	vi bc di
+摩托车的士	mo to ie di ui
+无的放矢	wu di fh ui
+最终目的	zv vs mu di
+有的放矢	yb di fh ui
+标的	bc di
+标的物	bc di wu
+漫无目的	mj wu mu di
+物质的	wu vi di
+的一确二	di yi qt or
+的一确二	di yi qv or
+的哥	di ge
+的士	di ui
+的士兵	di ui b;
+的士高	di ui gk
+的当	di dh
+的的确确	de di qt qt
+的的确确	de di qt qv
+的的确确	de di qv qt
+的的确确	de di qv qv
+的目的	de mu di
+的确	di qt
+的确	di qv
+的确会	di qt hv
+的确会	di qv hv
+的确如此	di qt ru ci
+的确如此	di qv ru ci
+的确是	di qt ui
+的确是	di qv ui
+的确有	di qt yb
+的确有	di qv yb
+的确没有	di qt mz yb
+的确没有	di qv mz yb
+的确良	di qt ld
+的确良	di qv ld
+目的	mu di
+目的地	mu di di
+目的性	mu di x;
+目的物	mu di wu
+质的	vi di
+质的飞跃	vi di fz yt
+质的飞跃	vi di fz yv
+达到目的	da dk mu di
+阿的平	oa di p;
+鹄的	gu di
+三闾大夫	sj ly dl fu
+世宗大王	ui zs dl wh
+主治大夫	vu vi dl fu
+光禄大夫	gd lu dl fu
+卿大夫	q; dl fu
+各大城市	ge dl ig ui
+吹牛大王	iv nq dl wh
+大城	dl ig
+大城乡	dl ig xd
+大城县	dl ig xm
+大城市	dl ig ui
+大夫	dl fu
+大夫松	dl fu ss
+大王	dl wh
+大王爷	dl wh ye
+大黄	dl hd
+大黄蜂	dl hd fg
+大黄鱼	dl hd yu
+山大王	uj dl wh
+御史大夫	yu ui dl fu
+荣禄大夫	rs lu dl fu
+蒙古大夫	mg gu dl fu
+谏大夫	jm dl fu
+马屁大王	ma pi dl wh
+数数	uo uo
+数数儿	uo uo or
+数数兼	uo uo jm
+数数看	uo uo kj
+数见不鲜	uo jm bu xm
+类频数	lz pn uo
+频数	pn uo
+频数分布	pn uo ff bu
+期年	ji nm
+会计	ky ji
+会计人员	ky ji rf yr
+会计准则	ky ji vp ze
+会计准则理事会	ky ji vp ze li ui hv
+会计分录	ky ji ff lu
+会计制度	ky ji vi du
+会计员	ky ji yr
+会计学	ky ji xt
+会计学	ky ji xv
+会计室	ky ji ui
+会计师	ky ji ui
+会计年度	ky ji nm du
+会计报表	ky ji bk bc
+会计标准	ky ji bc vp
+会计核算	ky ji he sr
+会计科目	ky ji ke mu
+会计簿	ky ji bu
+会计系	ky ji xi
+会计证	ky ji vg
+会计部	ky ji bu
+公认会计准	gs rf ky ji vp
+头会箕敛	tb ky ji lm
+总会计师	zs ky ji ui
+成本会计	ig bf ky ji
+注册会计师	vu ce ky ji ui
+碰头会	pg tb ky
+财会	cl ky
+财务会计	cl wu ky ji
+女红	ny gs
+丑媳妇总得要见公婆	ib xi fu zs dz yk jm gs po
+事非得已	ui fz dz yi
+势在必得	ui zl bi dz
+必得	bi dz
+志在必得	vi zl bi dz
+总得	zs dz
+数得上	uu dz uh
+犯得上	fj dz uh
+赶得上	gj dz uh
+过得去	go dz qu
+还过得去	hl go dz qu
+非得	fz dz
+非得不可	fz dz bu ke
+非得到	fz dz dk
+非得要	fz dz yk
+南无	na mo
+南无耶	na mo ye
+南无阿弥陀佛	na mo oe mi to fo
+亲家	q; jw
+亲家公	q; jw gs
+亲家母	q; jw mu
+亲家翁	q; jw wg
+单亲家庭	dj q; jw t;
+不见经传	bu jm j; vr
+传略	vr lt
+传略	vr lv
+传记	vr ji
+传记性	vr ji x;
+传记文学	vr ji wf xt
+传记文学	vr ji wf xv
+内传	nz vr
+列传	lx vr
+别传	bx vr
+刺客列传	ci ke lx vr
+名不见经传	m; bu jm j; vr
+圣经外传	ug j; wl vr
+圣经贤传	ug j; xm vr
+外传	wl vr
+家丑不可外传	jw ib bu ke wl vr
+小传	xc vr
+左传	zo vr
+教外别传	jc wl bx vr
+树碑立传	uu bz li vr
+正传	vg vr
+武林外传	wu ln wl vr
+水浒传	uv hu vr
+海上花列传	hl uh hw lx vr
+清史列传	q; ui lx vr
+经传	j; vr
+自传	zi vr
+自传体	zi vr ti
+言归正传	yj gv vg vr
+评传	p; vr
+阿甘正传	oa gj vg vr
+韩诗外传	hj ui wl vr
+金翅擘海	jn ii bl hl
+箪食壶浆	dj si hu jd
+箪食瓢饮	dj si pc yn
+郦食其	li yi ji
+似的	ui de
+粉团儿似的	ff tr or ui de
+第一信号系统	di yi uf hk xi ts
+二和药	or ho yk
+和弄	ho ns
+和泥	ho ni
+和稀泥	ho xi ni
+和面	ho mm
+拌和	bj ho
+掺和	ij ho
+搀和	ij ho
+搅和	jc ho
+暖和	nr ho
+杂和面	za ho mm
+杂和面儿	za ho mm or
+热和	re ho
+软和	rr ho
+饱和点	bk ho dm
+和了	hu le
+一宿	yi xq
+二十八宿	or ui ba xq
+星宿	x; xq
+星宿海	x; xq hl
+歇一宿	xx yi xq
+游说	yb uv
+游说团	yb uv tr
+游说团体	yb uv tr ti
+游说集团	yb uv ji tr
+说项	uv xd
+仓卒	ch cu
+拱券	gs xr
+老区	lk ob
+关卡	gr qw
+卡具	qw ju
+卡壳	qw ke
+卡子	qw zi
+卡脖子	qw bo zi
+发卡	fa qw
+哨卡	uk qw
+广发卡	gd fa qw
+浪卡子	lh qw zi
+浪卡子县	lh qw zi xm
+税卡	uv qw
+网路卡	wh lu qw
+边卡	bm qw
+集成电路卡	ji ig dm lu qw
+拾级而上	ue ji or uh
+专差	vr il
+交差	jc il
+交差了事	jc il lc ui
+信差	xn il
+公差	gs il
+公差费	gs il fz
+兼差	jm il
+出公差	iu gs il
+出差	iu il
+出差费	iu il fz
+办差	bj il
+听差	t; il
+官差	gr il
+差事	il ui
+差使	il ui
+差役	il yi
+差旅费	il ly fz
+差遣	il qm
+开小差	kl xc il
+当差	dh il
+当差的	dh il de
+撤差	ie il
+支差	vi il
+神差鬼使	uf il gv ui
+美差	mz il
+美差事	mz il ui
+苦差	ku il
+苦差事	ku il ui
+解差	jx il
+跟差	gf il
+邮差	yb il
+钦差	qn il
+钦差大臣	qn il da if
+鬼使神差	gv ui uf il
+参差	cf ci
+参差不齐	cf ci bu qi
+参差错落	cf ci co lo
+玉参差	yu cf ci
+心宽体胖	xn kr ti pj
+心广体胖	xn gd ti pj
+叶韵	xx yp
+一叶扁舟	yi ye pm vb
+扁舟	pm vb
+互见	hu xm
+图穷匕见	tu qs bi xm
+尸居龙见	ui ju ls xm
+层见迭出	cg xm dx iu
+情见乎辞	q; xm hu ci
+没见世面	mz xm ui mm
+涨跌互见	vh dx hu xm
+瑕瑜互见	xw yu hu xm
+见世面	xm ui mm
+见素抱朴	xm su bk pu
+将伯之助	qd bo vi vu
+将将	qd qd
+垫圈	dm jr
+皮垫圈	pi dm jr
+羊圈	yh jr
+以升量石	yi ug ld dj
+莲花落	lm hw lk
+落价	lk jw
+落子	lk zi
+落枕	lk vf
+落炕	lk kh
+落色	lk ul
+不吭一声	bu hh yi ug
+吭吭	hh hh
+引吭高歌	yn hh gk ge
+一暴十寒	yi pu ui hj
+暴晒	pu ul
+提溜	di lq
+提防	di fh
+委蛇	wz yi
+虚与委蛇	xu yu wz yi
+以己度人	yi ji do rf
+审度	uf do
+审度时势	uf do ui ui
+审时度势	uf ui do ui
+忖度	cp do
+揆情度理	kv q; do li
+揣度	iy do
+测度	ce do
+测度器	ce do qi
+测度法	ce do fa
+测度计	ce do ji
+测度论	ce do lp
+猜度	cl do
+窥度	kv do
+臆度	yi do
+裁度	cl do
+工尺	gs ie
+工尺谱	gs ie pu
+一报还一报	yi bk hr yi bk
+买椟还珠	ml du hr vu
+交还	jc hr
+交还给	jc hr gz
+以牙还牙	yi ya hr ya
+以眼还眼	yi yj hr yj
+以还	yi hr
+借尸还魂	jx ui hr hp
+偿还	ih hr
+反老还童	fj lk hr ts
+发还	fa hr
+合浦珠还	he pu vu hr
+合浦还珠	he pu hr vu
+告假还乡	gk jw hr xd
+告老还乡	gk lk hr xd
+回还	hv hr
+奉还	fg hr
+寄还给	ji hr gz
+强还原剂	qd hr yr ji
+归还	gv hr
+归还给	gv hr gz
+往还	wh hr
+往还于	wh hr yu
+提前还贷	ti qm hr dl
+漫天要价就地还钱	mj tm yk jw jq di hr qm
+珠还合浦	vu hr he pu
+璧还	bi hr
+生还	ug hr
+生还者	ug hr ve
+系统还原	xi ts hr yr
+索还债款	so hr vl kr
+衣锦还乡	yi jn hr xd
+要价还价	yk jw hr jw
+解甲还乡	jx jw hr xd
+讨价还价	tk jw hr jw
+讨还	tk hr
+返老还童	fj lk hr ts
+返还	fj hr
+返还占有	fj hr vj yb
+还乡	hr xd
+还乡团	hr xd tr
+还书	hr uu
+还价	hr jw
+还俗	hr su
+还债	hr vl
+还击	hr ji
+还原	hr yr
+还原作用	hr yr zo ys
+还原剂	hr yr ji
+还原成	hr yr ig
+还原染料	hr yr rj lc
+还原法	hr yr fa
+还原熔炼	hr yr rs lm
+还口	hr kb
+还嘴	hr zv
+还席	hr xi
+还愿	hr yr
+还愿意	hr yr yi
+还我河山	hr wo he uj
+还手	hr ub
+还手之力	hr ub vi li
+还本	hr bf
+还本付息	hr bf fu xi
+还淳反朴	hr ip fj pu
+还淳返朴	hr ip fj pu
+还清	hr q;
+还珠合浦	hr vu he pu
+还礼	hr li
+还给	hr gz
+还给他	hr gz ta
+还给到	hr gz dk
+还给我	hr gz wo
+还账	hr vh
+还贷	hr dl
+还钱	hr qm
+还阳	hr yh
+还魂	hr hp
+还魂橡胶	hr hp xd jc
+还魂纸	hr hp vi
+追还	vv hr
+退还	tv hr
+退还给	tv hr gz
+骂不还口	ma bu hr kb
+巷道	hh dk
+平巷	p; hh
+被发左衽	pi fa zo rf
+被发文身	pi fa wf uf
+被发缨冠	pi fa y; gr
+改道行驶	gl dk hg ui
+道行	dk hg
+阿房宫	oe ph gs
+阿房宫赋	oe ph gs fu
+公钥	gs yt
+公钥	gs yv
+天钥桥路	tm yt qc lu
+天钥桥路	tm yv qc lu
+密钥	mi yt
+密钥	mi yv
+权钥	qr yt
+权钥	qr yv
+金钥	jn yt
+金钥	jn yv
+锁钥	so yt
+锁钥	so yv
+东量西折	ds ld xi ue
+将功折过	jd gs ue go
+屈折	qu ue
+屈折语	qu ue yu
+折损	ue sp
+折损率	ue sp uy
+折本	ue bf
+折秤	ue ig
+折箭为誓	ue jm wz ui
+折耗	ue hk
+折腰五斗	ue yk wu db
+折衷	ue vs
+折衷主义	ue vs vu yi
+折衷家庭	ue vs jw t;
+折衷方案	ue vs fh oj
+折衷法	ue vs fa
+折衷鹦鹉	ue vs y; wu
+折辱	ue ru
+掂梢折本	dm uk ue bf
+摧折	cv ue
+攀花折柳	pj hw ue lq
+攀蟾折桂	pj ij ue gv
+曲曲折折	qu qu ve ue
+月中折桂	yt vs ue gv
+月中折桂	yv vs ue gv
+累积折耗	lz ji ue hk
+抹下来	ma xw ll
+抹布	ma bu
+抹脸	ma lm
+朝升暮合	vk ug mu ge
+区域网路	qu yu wh lo
+区域网路技术	qu yu wh lo ji uu
+咖喱	ga li
+咖喱粉	ga li ff
+栖栖皇皇	xi xi hd hd
+查查	va va
+查查看	va va kj
+铅山	yj uj
+铅山县	yj uj xm
+丢卒保车	dq zu bk ju
+舍车保帅	ue ju bk uy
+全军覆没	qr jp fu mo
+出没	iu mo
+出没无常	iu mo wu ih
+吞没	tp mo
+埋没	ml mo
+埋没人才	ml mo rf cl
+汩没	gu mo
+沉没	if mo
+沉没成本	if mo ig bf
+没世	mo ui
+没入	mo ru
+没头没尾	mz tb mo wz
+没奈何	mo nl he
+没收	mo ub
+没收到	mo ub dk
+没没无闻	mo mo wu wf
+没药	mo yk
+没落	mo lo
+没过	mo go
+没过去	mo go qu
+没过来	mo go ll
+没齿	mo ii
+没齿不忘	mo ii bu wh
+没齿难忘	mo ii nj wh
+沦没	lp mo
+泯没	mn mo
+浸没	jn mo
+淹没	yj mo
+湮没	yj mo
+湮没无闻	yj mo wu wf
+神出鬼没	uf iu gv mo
+籍没	ji mo
+被没收	bz mo ub
+覆没	fu mo
+辱没	ru mo
+一物降一物	yi wu xd yi wu
+乞降	qi xd
+劝降	qr xd
+受降	ub xd
+受降仪式	ub xd yi ui
+受降典礼	ub xd dm li
+屈膝投降	qu xi tb xd
+弃械投降	qi xx tb xd
+归降	gv xd
+投降	tb xd
+投降主义	tb xd vu yi
+投降书	tb xd uu
+招降	vk xd
+招降纳叛	vk xd na pj
+无条件投降	wu tc jm tb xd
+求降	qq xd
+纳降	na xd
+缴械投降	jc xx tb xd
+诈降	va xd
+诱降	yb xd
+请降	q; xd
+降伏	xd fu
+降服	xd fu
+降顺	xd up
+降龙	xd ls
+降龙伏虎	xd ls fu hu
+不省人事	bu x; rf ui
+人事不省	rf ui bu x;
+内省	nz x;
+内省性	nz x; x;
+内省法	nz x; fa
+反省	fj x;
+反省起来	fj x; qi ll
+反躬自省	fj gs zi x;
+发人深省	fa rf uf x;
+归省	gv x;
+日省月试	ri x; yt ui
+日省月试	ri x; yv ui
+昏定晨省	hp d; if x;
+晨昏定省	if hp d; x;
+深省	uf x;
+省亲	x; qn
+省察	x; ia
+省悟	x; wu
+省视	x; ui
+自省	zi x;
+丈二和尚摸不着头脑	vh or he uh mo bu vk tb nk
+不干着急	bu gj vk ji
+不着急	bu vk ji
+八竿子打不着	ba gj zi da bu vk
+别着急	bx vk ji
+失着	ui vk
+寻找着	xp vk vk
+干着急	gj vk ji
+很着急	hf vk ji
+怎么着	zf me vk
+找着	vk vk
+摸不着	mo bu vk
+摸不着头脑	mo bu vk tb nk
+支着	vi vk
+数不着	uu bu vk
+数得着	uu de vk
+棋高一着	qi gk yi vk
+歪打正着	wl da vg vk
+点着	dm vk
+犯不着	fj bu vk
+犯得着	fj de vk
+着三不着两	vk sj bu vk ld
+着凉	vk ld
+着忙	vk mh
+着急	vk ji
+着慌	vk hd
+着数	vk uu
+着法	vk fa
+着火	vk ho
+着火点	vk ho dm
+着迷	vk mi
+着迷于	vk mi yu
+着魔	vk mo
+睡着	uv vk
+睡着了	uv vk le
+能干着急	ng gj vk ji
+蒙着	mg vk
+该着	gl vk
+这么着	ve me vk
+那么着	na me vk
+不着边际	bu vo bm ji
+不着陆飞行	bu vo lu fz x;
+佛头着粪	fo tb vo ff
+吸着	xi vo
+呼吸着	hu xi vo
+大处着眼	da iu vo yj
+小处着手	xc iu vo ub
+执着	vi vo
+无着	wu vo
+沉着	if vo
+沉着应战	if vo y; vj
+牵着手	qm vo ub
+眯着眼	mi vo yj
+着力	vo li
+着力点	vo li dm
+着墨	vo mo
+着想	vo xd
+着意	vo yi
+着手	vo ub
+着手于	vo ub yu
+着手成春	vo ub ig ip
+着眼	vo yj
+着眼于	vo yj yu
+着眼点	vo yj dm
+着笔	vo bi
+着色	vo se
+着落	vo lo
+着装	vo vd
+着边	vo bm
+着边儿	vo bm or
+着重	vo vs
+着重于	vo vs yu
+着重号	vo vs hk
+着重指出	vo vs vi iu
+着重点	vo vs dm
+着陆	vo lu
+着陆场	vo lu ih
+着陆点	vo lu dm
+瞪着眼	dg vo yj
+石末沉着病	ui mo if vo b;
+硬着陆	y; vo lu
+空着手	ks vo ub
+穿红着绿	ir hs vo ly
+粘着力	nm vo li
+衣着	yi vo
+觑着眼	qu vo yj
+软着陆	rr vo lu
+闭着眼	bi vo yj
+闭着眼睛	bi vo yj j;
+附着	fu vo
+附着力	fu vo li
+附着物	fu vo wu
+使出浑身解数	ui iu hp uf xx uu
+浑身解数	hp uf xx uu
+混身解数	hp uf xx uu
+解数	xx uu
+解池	xx ii
+解法	xx fa
+秘鲁	bi lu
+秘鲁人	bi lu rf
+秘鲁苦蘵	bi lu ku vi
+系好	ji hk
+系带	ji dl
+系泊	ji bo
+系紧	ji jn
+系绳	ji ug
+系鞋带	ji xx dl
+红绳系足	hs ug ji zu
+解铃系铃	jx l; ji l;
+赤绳系足	ii ug ji zu
+长绳系日	ih ug ji ri
+含情脉脉	hj q; mo mo
+柔情脉脉	rb q; mo mo
+温情脉脉	wf q; mo mo
+脉脉	mo mo
+脉脉含情	mo mo hj q;
+胳臂	ge bz
+胳臂肘儿	ge bz vb or
+摩诃般若波罗蜜	mo he bo re bo lo mi
+摩诃般若波罗蜜多	mo he bo re bo lo mi do
+般若	bo re
+般若波罗密	bo re bo lo mi
+般若波罗密多心经	bo re bo lo mi do xn j;
+般若波罗蜜多	bo re bo lo mi do
+般若波罗蜜多心经	bo re bo lo mi do xn j;
+般若经	bo re j;
+般桓	pj hr
+玻色子	bo ul zi
+色子	ul zi
+落色	lk ul
+褪色	tv ul
+佛头著粪	fo tb vo ff
+执著	vi vo
+执著性	vi vo x;
+视微知著	ui wz vi vo
+撰著	vr ve
+一觉	yi jc
+一觉睡到天亮	yi jc uv dk tm ld
+一觉醒来	yi jc x; ll
+上床睡觉	uh id uv jc
+不睡觉	bu uv jc
+午觉	wu jc
+去睡觉	qu uv jc
+困觉	kp jc
+在睡觉	zl uv jc
+晚上睡觉	wj uh uv jc
+睡一觉	uv yi jc
+睡午觉	uv wu jc
+睡睡觉	uv uv jc
+睡觉	uv jc
+睡觉了	uv jc le
+睡觉前	uv jc qm
+睡觉去	uv jc qu
+睡觉吧	uv jc ba
+睡觉时	uv jc ui
+溃脓	hv ns
+句读	ju db
+转文	vy wf
+于思	yu sl
+成于思	ig yu sl
+冒顿	mo du
+碌碡	lq vb
+镐京	hk j;
+奇偶	ji ob
+奇偶性	ji ob x;
+奇函数	ji hj uu
+奇数	ji uu
+奇零	ji l;
+冒顿	mo du
+下乘	xw ug
+俟候	si hb
+俟机	si ji
+修谨以俟	xq jn yi si
+郦食其	li yi ji
+交恶	jc wu
+厌恶	yj wu
+厌恶感	yj wu gj
+可恶	ke wu
+可恶的	ke wu de
+同恶相助	ts wu xd vu
+善善恶恶	uj uj wu oe
+女性厌恶	ny x; yj wu
+好善恶恶	hk uj wu oe
+好恶	hk wu
+好逸恶劳	hk yi wu lk
+嫌恶	xm wu
+恶恶从短	wu wu cs dr
+恶湿居下	wu ui ju xw
+恶紫夺朱	wu zi do vu
+恶醉强酒	wu zv qd jq
+憎恶	zg wu
+深恶痛嫉	uf wu ts ji
+深恶痛绝	uf wu ts jt
+深恶痛绝	uf wu ts jv
+男性厌恶	nj x; yj wu
+痛恶	ts wu
+羞恶	xq wu
+羞恶之心	xq wu vi xn
+盛器	ig qi
+盛菜	ig cl
+盛饭	ig fj
+绿林	lu ln
+绿林军	lu ln jp
+绿林好汉	lu ln hk hj
+绿林豪客	lu ln hk ke
+绿林起义	lu ln qi yi
+鸭绿江	ya lu jd
+自怨自艾	zi yr zi yi
+乳臭	ru xq
+乳臭未干	ru xq wz gj
+无声无臭	wu ug wu xq
+臭味相投	xq wz xd tb
+铜臭	ts xq
+铜臭味	ts xq wz
+铜臭气	ts xq qi
+大伯子	da bl zi
+吐谷浑	tu yu hp
+冷杉木	lg ua mu
+杉木	ua mu
+倔强	jt jd
+倔强	jv jd
+强嘴	jd zv
+摩挲	ma sa
+倥侗	ks ts
+单于	ij yu
+大单于	da ij yu
+单姓	uj x;
+三藏	sj zh
+三藏法师	sj zh fa ui
+八万大藏经	ba wj da zh j;
+唐三藏	th sj zh
+地藏	di zh
+地藏王	di zh wh
+地藏王菩萨	di zh wh pu sa
+地藏菩萨	di zh pu sa
+大愿地藏菩萨	da yr di zh pu sa
+大藏经	da zh j;
+天祝藏族自治县	tm vu zh zu zi vi xm
+宝藏	bk zh
+木里藏族自治县	mu li zh zu zi vi xm
+果洛藏族自治州	go lo zh zu zi vi vb
+海北藏族自治州	hl bz zh zu zi vi vb
+海南藏族自治州	hl nj zh zu zi vi vb
+海西蒙古族藏族自治州	hl xi mg gu zu zh zu zi vi vb
+玉树藏族自治州	yu uu zh zu zi vi vb
+甘南藏族自治州	gj nj zh zu zi vi vb
+甘孜藏族自治州	gj zi zh zu zi vi vb
+藏人	zh rf
+藏历	zh li
+藏戏	zh xi
+藏族	zh zu
+藏族人	zh zu rf
+藏獒	zh ok
+藏红花	zh hs hw
+藏蓝	zh lj
+藏青	zh q;
+藏青色	zh q; se
+西藏	xi zh
+西藏人	xi zh rf
+西藏地方	xi zh di fh
+西藏文	xi zh wf
+西藏毛腿沙鸡	xi zh mk tv ua ji
+西藏自治区	xi zh zi vi qu
+西藏路	xi zh lu
+迪庆藏族自治州	di q; zh zu zi vi vb
+道藏	dk zh
+阿坝藏族羌族自治州	oa ba zh zu qd zu zi vi vb
+雅鲁藏布江	ya lu zh bu jd
+青藏高原	q; zh gk yr
+高丽大藏经	gk li da zh j;
+黄南藏族自治州	hd nj zh zu zi vi vb
+东阿	ds oe
+东阿县	ds oe xm
+公正不阿	gs vg bu oe
+刚正不阿	gh vg bu oe
+刚直不阿	gh vi bu oe
+南无阿弥陀佛	na mo oe mi to fo
+太阿倒持	tl oe dk ii
+守正不阿	ub vg bu oe
+阿其所好	oe qi so hk
+阿弥陀佛	oe mi to fo
+阿房宫	oe ph gs
+阿房宫赋	oe ph gs fu
+阿胶	oe jc
+阿谀	oe yu
+阿谀奉承	oe yu fg ig
+阿谀苟合	oe yu gb he
+阿谀逢迎	oe yu fg y;
+阿附	oe fu
+哪吒	ne va
+兰若	lj re
+摩诃般若波罗蜜	mo he bo re bo lo mi
+摩诃般若波罗蜜多	mo he bo re bo lo mi do
+般若	bo re
+般若波罗密	bo re bo lo mi
+般若波罗密多心经	bo re bo lo mi do xn j;
+般若波罗蜜多	bo re bo lo mi do
+般若波罗蜜多心经	bo re bo lo mi do xn j;
+般若经	bo re j;
+阿兰若	oa lj re
+初校样	iu jc yh
+参校	cj jc
+审校	uf jc
+校准	jc vp
+校勘	jc kj
+校勘学	jc kj xt
+校勘学	jc kj xv
+校场	jc ih
+校对	jc dv
+校对者	jc dv ve
+校改	jc gl
+校样	jc yh
+校核	jc he
+校正	jc vg
+校正子	jc vg zi
+校注	jc vu
+校点	jc dm
+校订	jc d;
+校订本	jc d; bf
+校订者	jc d; ve
+校阅	jc yt
+校阅	jc yv
+校阅者	jc yt ve
+校阅者	jc yv ve
+校验	jc yj
+校验码	jc yj ma
+屏住	b; vu
+屏弃	b; qi
+屏息	b; xi
+屏息以待	b; xi yi dl
+屏息静观	b; xi j; gr
+屏气	b; qi
+屏气凝神	b; qi n; uf
+屏退	b; tv
+屏除	b; iu
+南无	na mo
+南无耶	na mo ye
+南无阿弥陀佛	na mo oe mi to fo
+属意	vu yi
+属意于	vu yi yu
+属望	vu wh
+属毛离里	vu mk li li
+下槛	xw jm
+云窗雾槛	yp id wu jm
+兽槛	ub jm
+对了槛儿	dv le jm or
+朱云折槛	vu yp ve jm
+槛花笼鹤	jm hw ls he
+槛车	jm ie
+笼槛	ls jm
+笼鸟槛猿	ls nc jm yr
+虎槛	hu jm
+轩槛	xr jm
+阑槛	lj jm
+不相称	bu xd if
+不称职	bu if vi
+两侧对称	ld ce dv if
+中心对称	vs xn dv if
+匀称	yp if
+对称	dv if
+对称中心	dv if vs xn
+对称性	dv if x;
+对称破缺	dv if po qt
+对称破缺	dv if po qv
+对称空间	dv if ks jm
+对称轴	dv if vb
+相称	xd if
+称体裁衣	if ti cl yi
+称心	if xn
+称心如意	if xn ru yi
+称愿	if yr
+称职	if vi
+称身	if uf
+自发对称破缺	zi fa dv if po qt
+自发对称破缺	zi fa dv if po qv
+超对称	ik dv if
+身段匀称	uf dr yp if
+轴对称	vb dv if
+辐射对称	fu ue dv if
+配称	pz if
+铢两悉称	vu ld xi if
+非对称	fz dv if
+陆万	lq wj
+陆仟	lq qm
+陆佰	lq bl
+陆拾	lq ui
+干将莫邪	gj jd mo ye
+石室金匮	ui ui jn gv
+金匮石室	jn gv ui ui
+择不开	vl bu kl
+择席	vl xi
+择菜	vl cl
+挺括	t; gw
+搜括	sb gw
+搜括一空	sb gw yi ks
+丹参	dj uf
+人参	rf uf
+人参果	rf uf go
+人参精	rf uf j;
+人参酒	rf uf jq
+党参	dh uf
+参商	uf uh
+参茸	uf rs
+参辰卯酉	uf if mk yb
+参辰日月	uf if ri yt
+参辰日月	uf if ri yv
+屁股里吃人参	pi gu li ii rf uf
+川党参	ir dh uf
+扪参历井	mf uf li j;
+斗转参横	db vr uf hg
+日月参辰	ri yt uf if
+日月参辰	ri yv uf if
+曾参杀人	zg uf ua rf
+月落参横	yt lo uf hg
+月落参横	yv lo uf hg
+沙参	ua uf
+海参	hl uf
+海参威	hl uf wz
+海参崴	hl uf wz
+猪八戒吃人参果	vu ba jx ii rf uf go
+略无参商	lt wu uf uh
+略无参商	lv wu uf uh
+苦参	ku uf
+西洋参	xi yh uf
+高丽参	gk li uf
+参差	cf ci
+参差不齐	cf ci bu qi
+参差错落	cf ci co lo
+参错	cf co
+玉参差	yu cf ci
+否极泰来	pi ji tl ll
+泰极而否	tl ji or pi
+臧否	zh pi
+寻思	xn si
+肚里寻思	du li xn si
+咋呼	va hu
+白术	bl vu
+苍术	ch vu
+核儿	hu or
+扯篷拉纤	ie pg la qm
+拉纤	la qm
+纤夫	qm fu
+纤手	qm ub
+纤绳	qm ug
+为什	wz ui
+乌什	wu ui
+乌什县	wu ui xm
+乌什塔拉	wu ui ta la
+乌什塔拉乡	wu ui ta la xd
+乌什塔拉回族乡	wu ui ta la hv zu xd
+什一奉献	ui yi fg xm
+什不闲	ui bu xm
+什么时间	ui me ui jm
+什件	ui jm
+什刹海	ui ia hl
+什叶	ui ye
+什叶派	ui ye pl
+什器	ui qi
+什物	ui wu
+什菜	ui cl
+什邡	ui fh
+什邡市	ui fh ui
+什锦	ui jn
+什锦果盘	ui jn go pj
+什锦炒面	ui jn ik mm
+什锦菜	ui jn cl
+什锦锉	ui jn co
+什锦面	ui jn mm
+什面	ui mm
+克什	ke ui
+克什克腾	ke ui ke tg
+克什克腾旗	ke ui ke tg qi
+克什米尔	ke ui mi or
+兴都库什山	x; db ku ui uj
+劳什子	lk ui zi
+卡拉什尼科夫	ka la ui ni ke fu
+卡文迪什	ka wf di ui
+印古什	yn gu ui
+喀什	ka ui
+喀什噶尔	ka ui ga or
+喀什地区	ka ui di qu
+喀什市	ka ui ui
+喀什米尔	ka ui mi or
+塔什干	ta ui gj
+塔什库尔干乡	ta ui ku or gj xd
+塔什库尔干自治县	ta ui ku or gj zi vi xm
+奥什	ok ui
+孟什维克	mg ui wz ke
+家什	jw ui
+小布什	xc bu ui
+巴尔喀什	ba or ka ui
+巴尔喀什湖	ba or ka ui hu
+巴控克什米尔	ba ks ke ui mi or
+布什	bu ui
+布什尔	bu ui or
+布什尔省	bu ui or ug
+布什总统	bu ui zs ts
+布尔什维克	bu or ui wz ke
+干什	gj ui
+拉什	la ui
+拉什卡尔加	la ui ka or jw
+拉什莫尔山	la ui mo or uj
+捞什子	lk ui zi
+新罕布什尔	xn hj bu ui or
+新罕布什尔州	xn hj bu ui or vb
+普什图语	pu ui tu yu
+普里什蒂纳	pu li ui di na
+有什	yb ui
+札什伦布寺	va ui lp bu si
+比什凯克	bi ui kl ke
+法尔卡什	fa or ka ui
+波什格伦	bo ui ge lp
+班什	bj ui
+科什图尼察	ke ui tu ni ia
+篇什	pm ui
+纳什	na ui
+考波什堡	kk bo ui bk
+艾尔米塔什	ol or mi ta ui
+萨卡什维利	sa ka ui wz li
+通什	ts ui
+阿什克隆	oa ui ke ls
+阿什哈巴德	oa ui ha ba de
+阿什拉维	oa ui la wz
+阿图什	oa tu ui
+阿图什县	oa tu ui xm
+阿图什市	oa tu ui ui
+雅什	ya ui
+雅诺什	ya no ui
+马拉喀什	ma la ka ui
+鸠摩罗什	jq mo lo ui
+不给予	bu ji yu
+人给家足	rf ji jw zu
+仰给	yh ji
+仰给于人	yh ji yu rf
+供给	gs ji
+供给制	gs ji vi
+供给量	gs ji ld
+供给面	gs ji mm
+军需补给	jp xu bu ji
+利口捷给	li kb jx ji
+家给人足	jw ji rf zu
+弹药补给站	dj yk bu ji vj
+总供给	zs gs ji
+日不暇给	ri bu xw ji
+目不暇给	mu bu xw ji
+给予	ji yu
+给予了	ji yu le
+给养	ji yh
+给水	ji uv
+给水器	ji uv qi
+给水站	ji uv vj
+给水管	ji uv gr
+给水箱	ji uv xd
+自给	zi ji
+自给有余	zi ji yb yu
+自给自足	zi ji zi zu
+自足自给	zi zu zi ji
+补给	bu ji
+补给品	bu ji pn
+补给点	bu ji dm
+补给站	bu ji vj
+补给线	bu ji xm
+补给舰	bu ji jm
+补给船	bu ji ir
+进给量	jn ji ld
+配给	pz ji
+配给制度	pz ji vi du
+配给卡	pz ji ka
+配给品	pz ji pn
+配给票	pz ji pc
+配给证	pz ji vg
+配给量	pz ji ld
+枝蔓	vi wj
+藤蔓	tg wj
+赚得	zr de
+华达呢	hw da ni
+呢喃	ni nj
+呢喃细语	ni nj xi yu
+呢子	ni zi
+呢绒	ni rs
+格子花呢	ge zi hw ni
+毛呢	mk ni
+燕语呢喃	yj yu ni nj
+花呢	hw ni
+龟兹	qq ci
+龟裂	jp lx
+络子	lk zi
+纶巾	gr jn
+羽扇纶巾	yu uj gr jn
+莞尔	wj or
+扛鼎	gh d;
+马尾	ma yi
+马尾军港	ma yi jp gh
+马尾区	ma yi qu
+马尾松	ma yi ss
+马尾水	ma yi uv
+马尾水师学堂	ma yi uv ui xt th
+马尾水师学堂	ma yi uv ui xv th
+马尾港	ma yi gh
+马尾穿豆腐	ma yi ir db fu
+马尾藻	ma yi zk
+马尾辫	ma yi bm
+骨殖	gu ui
+封禅	fg uj
+禅让	uj rh
+大埔	da bu
+大埔乡	da bu xd
+大埔县	da bu xm
+浩浩汤汤	hk hk uh uh
+癞虾蟆	ll ha ma
+虾蟆	ha ma
+蔚县	yu xm
+姿态婀娜	zi tl oe no
+婀娜	oe no
+婀娜多姿	oe no do zi
+袅娜	nc no
+袅娜纤巧	nc no xm qc
+袅娜风流	nc no fg lq
+袅袅娜娜	nc nc no no
+龟兹	qq ci
+勒住	lz vu
+勒紧	lz jn
+勒紧裤带	lz jn ku dl
+月氏	yt vi
+月氏	yv vi
+月氏人	yt vi rf
+月氏人	yv vi rf
+吡叻	pi le
+吡拉西坦	pi la xi tj
+咯嚓	lo ca
+咯当	lo dh
+异咯嗪	yi lo qn
+弄口	ls kb
+弄堂	ls th
+里弄	li ls
+糜子	mz zi
+吴堡	wu bu
+吴堡县	wu bu xm
+堡子	bu zi
+地堡	di pu
+大堡礁	da pu jc
+汉堡包	hj pu bk
+海德堡大学	hl de pu da xt
+海德堡大学	hl de pu da xv
+家雀	jw qc
+雀子	qc zi
+迫击炮	pl ji pk
+便溺	bm nc
+尿泡	sv pk
+尿脬	sv pk
+搅混	jc gp
+颉颃	xx hh
+仡栗	yi li
+拓印	ta yn
+拓本	ta bf
+拓片	ta pm
+稽首	qi ub
+伛偻	yu ly
+痀偻	gb ly
+痀偻病	gb ly b;
+伽倻	qx ye
+伽倻琴	qx ye qn
+伽利略伽利雷	jw li lt qx li lz
+伽利略伽利雷	jw li lv qx li lz
+伽师	qx ui
+伽师县	qx ui xm
+伽玛射线	qx ma ue xm
+伽罗华	qx lo hw
+伽罗华理论	qx lo hw li lp
+伽罗瓦	qx lo wa
+伽罗瓦理论	qx lo wa li lp
+伽蓝	qx lj
+卢棱伽	lu lg qx
+奥米伽	ok mi qx
+摩喉罗伽	mo hb lo qx
+摩睺罗伽	mo hb lo qx
+欧米伽	ob mi qx
+薄伽梵	bk qx fj
+阿伏伽德罗	oa fu qx de lo
+阿伏伽德罗定律	oa fu qx de lo d; ly
+阿伏伽德罗常数	oa fu qx de lo ih uu
+阿伏伽德罗数	oa fu qx de lo uu
+伽马	ga ma
+伽马刀	ga ma dk
+伽马射线	ga ma ue xm
+伽马射线探测器	ga ma ue xm tj ce qi
+伽马辐射	ga ma fu ue
+富贾	fu jw
+澄沙	dg ua
+吟哦	yn oe
+傍若无人	ph ro wu rf
+僬侥	jc yk
+厚朴	hb po
+朴刀	po dk
+朴硝	po xc
+倘佯	ih yh
+椎心泣血	iv xn qi xt
+椎心泣血	iv xn qi xv
+兔起鹘落	tu qi hu lo
+剿袭	ik xi
+剿说	ik uo
+泌阳	bi yh
+泌阳县	bi yh xm
+暴虎冯河	bk hu p; he
+嘲哳	vk va
+豁拳	hw qr
+脖颈	bo gg
+脖颈儿	bo gg or
+脖颈子	bo gg zi
+威吓	wz he
+恐吓	ks he
+恐吓信	ks he xn
+恐吓性	ks he x;
+恐吓罪	ks he zv
+恫吓	ds he
+鹄的	gu di
+千顷陂	qm q; bz
+芍陂	uk bz
+陂塘	bz th
+陂池	bz ii
+陂陀	po to
+诘屈聱牙	ji qu ok ya
+发噱	fa jt
+发噱	fa jv
+寒颤	hj vj
+打颤	da vj
+颤栗	vj li
+叨光	tk gd
+叨扰	tk rk
+叨教	tk jc
+叨陪末座	tk pz mo zo
+叨陪鲤对	tk pz li dv
+絮叨叨	xu dk tk
+吖嗪	ya qn
+喀嗒	ka ta
+嗒丧	ta sh
+嗒然	ta rj
+噶嗒	ga ta
+隽品	jp pn
+隽妙	jp mc
+隽拔	jp ba
+隽敏	jp mn
+隽材	jp cl
+隽良	jp ld
+隽茂	jp mk
+隽誉	jp yu
+隽语	jp yu
+呗赞	bz zj
+赞呗	zj bz
+白不呲咧	bl bu ci lx
+咱家	za jw
+多咱	do za
+女流氓	ny lq mg
+愚氓	yu mg
+群氓	qp mg
+裨将	pi jd
+平峒	p; ds
+心拙口夯	xn vo kb bf
+芥蓝	gl lj
+芥蓝菜	gl lj cl
+纰缪	pi mq
+缪种流传	mq vs lq ir
+怔忪	vg vs
+恣睢	zi sv
+暴戾恣睢	bk li zi sv
+疟子	yk zi
+旱潦	hj lk
+旱潦之灾	hj lk vi zl
+泥潦	ni lk
+涂潦	tu lk
+湟潦生苹	hd lk ug p;
+潦潦草草	lk lc ck ck
+松筠之节	ss jp vi jx
+枸橼	ju yr
+雪茄	xt jw
+雪茄	xv jw
+雪茄烟	xt jw yj
+雪茄烟	xv jw yj
+炮烙	pk lo
+炮烙之刑	pk lo vi x;
+熨帖	yu tx
+犍牛	jm nq
+犍陀罗	jm to lo
+睥睨一切	pi ni yi qx
+苇苕系巢	wz tc xi ik
+苕帚	tc vb
+莨苕	lh tc
+趑趄	zi ju
+趑趄不前	zi ju bu qm
+趑趄嗫嚅	zi ju nx ru
+趵趵	bk bk
+黄骠马	hd bc ma

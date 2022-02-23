@@ -1,6 +1,6 @@
 ---
 name: my_own
-version: 2022-02-17
+version: 2022-02-23
 sort: by_weight
 use_preset_vocabulary: false
 ...
@@ -448,8 +448,7 @@ use_preset_vocabulary: false
 向	xd
 听	t;
 吹	iv
-告	gk	100.00%
-告	gu	0.00%
+告	gk
 呎	ii
 员	yr
 将	jd	99.96%
@@ -643,8 +642,7 @@ use_preset_vocabulary: false
 幢	id
 干	gj
 净	j;
-弟	di	100.00%
-弟	ti	0.00%
+弟	di
 兄	xs
 平	p;
 计	ji
@@ -1092,8 +1090,7 @@ use_preset_vocabulary: false
 志	vi
 维	wz
 缕	ly
-缩	so	100.00%
-缩	su	0.00%
+缩	so
 缸	gh
 罐	gr
 网	wh
@@ -1234,8 +1231,7 @@ use_preset_vocabulary: false
 醉	zv
 针	vf
 铲	ij
-粥	vb	100.00%
-粥	yu	0.00%
+粥	vb
 错	co
 锤	iv
 音	yn
@@ -1360,8 +1356,7 @@ use_preset_vocabulary: false
 虫	is
 景	j;
 曜	yk
-革	ge	100.00%
-革	ji	0.00%
+革	ge
 竖	uu
 奇	qi	99.21%
 奇	ji	0.79%
@@ -1377,8 +1372,7 @@ use_preset_vocabulary: false
 美	mz
 乡	xd
 艺	yi
-荤	hp	100.00%
-荤	xp	0.00%
+荤	hp
 奏	zb
 除	iu
 碎	sv
@@ -4422,8 +4416,7 @@ use_preset_vocabulary: false
 哨	uk
 掠	lt
 掠	lv
-揭	jx	100.00%
-揭	qi	0.00%
+揭	jx
 桅	wz
 翅	ii
 赵	vk
@@ -4739,8 +4732,7 @@ use_preset_vocabulary: false
 卩	jx
 卪	jx
 戍	uu
-卬	yh	50.00%
-卬	oh	50.00%
+卬	yh
 卭	qs
 卮	vi
 袄	ok
@@ -4753,8 +4745,7 @@ use_preset_vocabulary: false
 卲	uk
 卶	ii
 漩	xr
-涡	wo	100.00%
-涡	go	0.00%
+涡	wo
 蛾	oe
 帙	vi
 帻	ze
@@ -4850,7 +4841,6 @@ use_preset_vocabulary: false
 噱	xv	98.80%
 擿	ti	87.50%
 擿	vl	12.50%
-擿	vi	0.00%
 狸	li
 迅	xp
 怵	iu
@@ -4956,8 +4946,7 @@ use_preset_vocabulary: false
 叼	dc
 叽	ji
 咕	gu
-喳	va	100.00%
-喳	ia	0.00%
+喳	va
 嘎	ga
 呱	gw	28.71%
 呱	gu	71.29%
@@ -5048,8 +5037,7 @@ use_preset_vocabulary: false
 趼	jm
 吷	xt
 吷	xv
-拂	fu	100.00%
-拂	bi	0.00%
+拂	fu
 疵	ci
 熄	xi
 皱	vb
@@ -5614,8 +5602,7 @@ use_preset_vocabulary: false
 圗	tu
 圚	hv
 圛	yi
-圜	hr	100.00%
-圜	yr	0.00%
+圜	hr
 圝	lr
 蟮	uj
 埂	gg
@@ -6751,8 +6738,7 @@ use_preset_vocabulary: false
 蹉	co
 跎	to
 聿	yu
-岂	qi	100.00%
-岂	kl	0.00%
+岂	qi
 岄	yt
 岄	yv
 岅	bj
@@ -7987,8 +7973,7 @@ use_preset_vocabulary: false
 踠	wj
 挜	ya
 挝	vw
-挟	xx	100.00%
-挟	jw	0.00%
+挟	xx
 挢	jc
 麈	vu
 挦	xm
@@ -8420,8 +8405,7 @@ use_preset_vocabulary: false
 譬	pi
 斺	ij
 斻	hh
-於	wu	100.00%
-於	yu	0.00%
+於	wu
 斾	pz
 斿	lq
 旀	mz
@@ -8758,8 +8742,7 @@ use_preset_vocabulary: false
 睁	vg
 杒	rf
 杔	to
-杕	di	50.00%
-杕	do	50.00%
+杕	di
 藜	li
 杗	mh
 杘	ii
@@ -9905,8 +9888,7 @@ use_preset_vocabulary: false
 浵	ts
 浶	lk
 蜃	uf
-蛆	qu	100.00%
-蛆	ju	0.00%
+蛆	qu
 蛎	li
 蛞	ko
 蝓	yu
@@ -10075,8 +10057,7 @@ use_preset_vocabulary: false
 湨	ju
 湩	ds
 湪	tr
-湫	qq	50.00%
-湫	jc	50.00%
+湫	qq
 湬	qq
 湭	qq
 湮	yj
@@ -10802,8 +10783,7 @@ use_preset_vocabulary: false
 犱	ji
 犲	il
 犳	vo
-犴	hj	50.00%
-犴	oj	50.00%
+犴	hj
 犵	ge
 犷	gd
 犸	ma
@@ -10899,8 +10879,7 @@ use_preset_vocabulary: false
 猭	ir
 猯	tr
 猰	ya
-猲	xx	50.00%
-猲	ge	50.00%
+猲	xx
 猳	jw
 猵	bm
 猸	mz
@@ -11675,8 +11654,7 @@ use_preset_vocabulary: false
 瞽	gu
 阇	du
 瞾	vk
-瞿	qu	100.00%
-瞿	ju	0.00%
+瞿	qu
 矀	wz
 矁	ib
 矂	sk
@@ -13539,8 +13517,7 @@ use_preset_vocabulary: false
 莤	su
 莥	nq
 莦	uk
-莨	lh	100.00%
-莨	ld	0.00%
+莨	lh
 菪	dh
 莩	fu	50.00%
 莩	pc	50.00%
@@ -14125,8 +14102,7 @@ use_preset_vocabulary: false
 蛽	bz
 蛿	hj
 蜁	xr
-螫	ui	100.00%
-螫	ve	0.00%
+螫	ui
 蜄	uf
 蜅	fu
 蜈	wu
@@ -17349,8 +17325,7 @@ use_preset_vocabulary: false
 麄	cu
 麅	pk
 麆	vu
-麇	jp	100.00%
-麇	qp	0.00%
+麇	jp
 麉	jm
 麊	mi
 麋	mi
@@ -24520,4 +24495,3 @@ use_preset_vocabulary: false
 鱩	lz
 屷	hv
 俧	vi
-麽	mo
