@@ -47,6 +47,7 @@ patch:
     - derive/^([a-z;]+):(\w)\w+/$1$2/
     - xform/://
     - xlit/ABCDEFGHIJKLMNOPQRSTUVWXYZ/abcdefghijklmnopqrstuvwxyz/
+    - derive/^([a-z])$/\U$1/
 
   double_assistant_reverse_lookup: #該反查濾鏡名
     tags: [ double_assistant_reverse_lookup_helper ] #挂在helper这个translator上
