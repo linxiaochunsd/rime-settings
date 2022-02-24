@@ -128,10 +128,6 @@ patch:
     suffix: ""
     tips: 〔反查辅助码〕
 
-
-  __include: easy_en:/patch_double_pinyin_mspy
-  easy_en/enable_sentence: false
-
   switches/@next:
     name: symbol_support
     reset: 1
