@@ -40,14 +40,13 @@ patch:
     - lua_translator@date_time_translator
 
 #  speller/delimiter: "'"
-  speller/alphabet: zyxwvutsrqponmlkjihgfedcba;ABCDEFGHIJKLMNOPQRSTUVWXYZ
-  speller/initials: zyxwvutsrqponmlkjihgfedcbaABCDEFGHIJKLMNOPQRSTUVWXYZ
+  speller/alphabet: zyxwvutsrqponmlkjihgfedcba;
+  speller/initials: zyxwvutsrqponmlkjihgfedcba
   speller/algebra:
     - derive/^([a-z;]+):\w+/$1/
     - derive/^([a-z;]+):(\w)\w+/$1$2/
     - xform/://
     - xlit/ABCDEFGHIJKLMNOPQRSTUVWXYZ/abcdefghijklmnopqrstuvwxyz/
-    - derive/^([a-z])$/\U$1/
 
   double_assistant_reverse_lookup: #該反查濾鏡名
     tags: [ double_assistant_reverse_lookup_helper ] #挂在helper这个translator上
