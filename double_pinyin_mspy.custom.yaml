@@ -43,10 +43,6 @@ patch:
   speller/alphabet: zyxwvutsrqponmlkjihgfedcba;
   speller/initials: zyxwvutsrqponmlkjihgfedcba
   speller/algebra:
-    - derive/^([a-z;]+):\w+/$1/
-    - derive/^([a-z;]+):(\w)\w+/$1$2/
-    - xform/://
-    - xlit/ABCDEFGHIJKLMNOPQRSTUVWXYZ/abcdefghijklmnopqrstuvwxyz/
 
   double_assistant_reverse_lookup: #該反查濾鏡名
     tags: [ double_assistant_reverse_lookup_helper ] #挂在helper这个translator上
