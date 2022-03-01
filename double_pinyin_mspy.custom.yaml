@@ -70,7 +70,6 @@ patch:
     user_dict: my_dict
     initial_quality: 0.9
     preedit_format:
-      - xform/([\w;]{2})([\w;]+)/$1:\U$2\E/
       - xform/([aoe])(\w)/0$2/
       - xform/([bpmnljqxy])n/$1in/
       - xform/(\w)g/$1eng/
@@ -107,7 +106,6 @@ patch:
       - "xform/(^|[ '])u/$1sh/"
       - xform/([jqxy])v/$1u/
       - xform/([nl])v/$1ü/
-        #      - xform/([\w;ü]+)/\{$1\}/
 #    spelling_hints: 10
 #    comment_format:
 #      - xform/.*([A-Z]{2})$/[$1]/
