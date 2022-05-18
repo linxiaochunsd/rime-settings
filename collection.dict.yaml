@@ -6,6 +6,7 @@ vocabulary: essay-zh-hans
 
 import_tables:
   - my_own
+  - zhwiki
   - chengyusuyu
   - popular
   - place
